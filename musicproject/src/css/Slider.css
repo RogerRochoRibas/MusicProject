@@ -6,6 +6,16 @@
 	margin-left: 1em;
 	flex: 1;
 }
+
+.heat-slider--label {
+	display:flex;
+	justify-content: space-between;
+}
+
+.heat-slider--label > h3 {
+width: auto;
+margin-bottom: 0;
+}
 .heat-slider--v {
 	display: flex;
 	flex-direction: column;
@@ -24,7 +34,7 @@
 	--slider-blue: #2c95dd;
 	--slider-radius: 1em;
 	--slider-handle-size: 1em;
-	--p: 22.9%;
+	--p: 50%;
 	width: 30em;
 }
 .heat-slider--input {
