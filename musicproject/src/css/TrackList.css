@@ -1,0 +1,25 @@
+.tracks {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 15px;
+}
+.track {
+  border-bottom: 1px solid #282828;
+  height: 42px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 10px
+}
+.track_title {
+  font-weight: bold;
+}
+
+.track_artist {
+  margin-left: 5px;
+  color: rgb(90, 90, 90);
+}
+.track_genre {
+  margin-left: auto;
+  color: rgb(90, 90, 90);
+}

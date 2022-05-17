@@ -10,8 +10,8 @@ export function Slider(props) {
   };
 
   return (
-    <p>
-      <label class="heat-slider heat-slider--v">
+    <div className='slider'>
+      <label className="heat-slider heat-slider--v">
         <div className="heat-slider--label"><h3>{props.identifierTwo}</h3><h3>{props.identifier}</h3></div>
         <span className="heat-slider--input">
           <input
@@ -24,6 +24,6 @@ export function Slider(props) {
         </span>
       </label>
       <output id={props.identifier}></output>
-    </p>
+    </div>
   );
 }

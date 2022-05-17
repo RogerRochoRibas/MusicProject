@@ -1,3 +1,7 @@
+.slider {
+	margin-bottom: 2em;
+}
+
 .heat-slider--h {
 	display: flex;
 	align-items: center;
@@ -27,12 +31,12 @@ margin-bottom: 0;
 }
 .heat-slider {
 	--slider-base: #d8d8d8;
-	--slider-red: #fc3770;
+	--slider-red: #fe205f;
 	--slider-orange: #ff7f36;
-	--slider-yellow: #f6d866;
-	--slider-green: #74c35a;
+	--slider-yellow: #fdd73d;
+	--slider-green: #58de2c;
 	--slider-blue: #2c95dd;
-	--slider-radius: 1em;
+	--slider-radius: 0.4em;
 	--slider-handle-size: 1em;
 	--p: 50%;
 	width: 30em;
@@ -140,4 +144,8 @@ body {
 output {
 	margin: 1em;
 	opacity: 0.4;
+}
+
+h3 {
+	margin:0
 }

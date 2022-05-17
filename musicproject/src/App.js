@@ -1,11 +1,15 @@
-import "./css/App.css";
 import "./css/Slider.css";
+import "./css/Button.css";
+import "./css/TrackList.css"
 import React from "react";
 import { Slider } from "./Slider";
 import { ChangeSongs } from "./ChangeSongs"
+import { TrackList } from "./TrackList";
+import { GenreSelector } from "./GenreSelector";
 
 function App() {
   const [musicList, setMusicList] = React.useState([]);
+  const [trackList, setTrackList] = React.useState([])
   const [trackValence, setTrackValence] = React.useState(500000)
   const [trackArousal, setTrackArousal] = React.useState(500000)
 
@@ -34,6 +38,10 @@ function App() {
       .then((music) => {
         setMusicList(music);
         console.log("music: ", music);
+        if (music.tracks) {
+        setTrackList(music.tracks.track)
+        console.log('trackList: ',trackList)
+        }
       });
   }
   
@@ -43,10 +51,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Welcome</h1>
+      <h1>Music Project</h1>
       <Slider setTrack={setTrackValence} identifier='Happy' identifierTwo='Sad'></Slider>
       <Slider setTrack={setTrackArousal} identifier='Energetic' identifierTwo='Calm'></Slider>
+      <GenreSelector/>
       <ChangeSongs fetchMain={()=>fetchMain()}></ChangeSongs>
+      <div className='Tracks'><TrackList trackList={trackList}/></div>
     </div>
   );
 }
