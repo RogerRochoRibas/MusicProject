@@ -29,6 +29,9 @@ function App() {
   resultsnumber=15
   resultsnumber=1
   */
+ // Genres ok: hiphop, electro, jazz, latin, rock, metal, pop, classical
+ // Genres to consider: randb (r&B), soundtrack (cinema), folk, vocal pop (vocal)
+ // Genres now showing up: funk, gospel, soul
  // to get cover art: https://musicbrainz.org/doc/Cover_Art_Archive/API
  // or https://developers.music-story.com/developers/artist
  // night mode toogle https://codepen.io/daviddarnes/pen/LdGYVG
