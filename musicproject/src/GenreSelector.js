@@ -1,12 +1,12 @@
 export function GenreSelector(props) {
   return (
-    <div>
+    <div id='genreGrid'>
     <GenreButton genre="Rap" />
       <GenreButton genre="Electro" />
       <GenreButton genre="Randb" />
       <GenreButton genre="Latino" />
       <GenreButton genre="Jazz" />
-      <GenreButton genre="Classique" />
+      <GenreButton genre="Classical" />
       <GenreButton genre="Gospel" />
       <GenreButton genre="Cinema" />
       <GenreButton genre="Blues" />
@@ -15,7 +15,7 @@ export function GenreSelector(props) {
       <GenreButton genre="Reggae" />
       <GenreButton genre="Rock" />
       <GenreButton genre="Soul" />
-      <GenreButton genre="Variete" />
+      <GenreButton genre="Vocal" />
       <GenreButton genre="Funk" />
       <GenreButton genre="Pop" />
       <GenreButton genre="Disco" />
@@ -26,10 +26,12 @@ export function GenreSelector(props) {
 function GenreButton(props) {
   return (
     <div>
-      <article className="genreBox">
+      <article className={props.genre}>
+        <div className='genreBox'>
         <input type="checkbox" />
         <div>
           <span className="genre">{props.genre}</span>
+        </div>
         </div>
       </article>
     </div>

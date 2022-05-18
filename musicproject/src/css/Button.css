@@ -1,3 +1,4 @@
+/*Get Songs Button*/
 .bn39 {
   background-image: linear-gradient(135deg, #008aff, #86d472);
   border-radius: 6px;
@@ -35,42 +36,210 @@
   background: transparent;
 }
 
+/*Genre Buttons*/
+#genreGrid {
+  max-width: 300px;
+}
+
 button {
   cursor: pointer;
   border-width: 0;
 }
 
 article {
-    position: relative;
-    width: 140px;
-    height: 60px;
-    margin: 5px;
-    float: left;
-    border: 2px solid #50bcf2;
-    box-sizing: border-box;
-  }
-  
-  article div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 25px;
-    transition: .5s ease;
-  }
-  
-  article input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 140px;
-    height: 100px;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  input[type=checkbox]:checked ~ div {
-    background-color: #50bcf2;
-    color:white
-  }
+  position: relative;
+  width: 120px;
+  height: 30px;
+  margin: 5px;
+  float: left;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: 0.5s ease;
+}
+
+.genreBox > input {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.genreBox > input[type="checkbox"]:checked ~ div {
+  background-color: #50bcf2;
+}
+
+/*Genre Colors*/
+.Rap {
+  background: rgba(249, 0, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 0, 28, 1) 0%,
+    rgba(249, 0, 0, 1) 100%
+  );
+}
+
+.Electro {
+  background: rgba(245, 0, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 0, 0, 1) 0%,
+    rgba(245, 0, 0, 1) 100%
+  );
+}
+
+.Randb {
+  background: rgba(249, 0, 165, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 0, 71, 1) 0%,
+    rgba(249, 0, 165, 1) 100%
+  );
+}
+
+.Latino {
+  background: rgba(249, 66, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 28, 0, 1) 0%,
+    rgba(249, 66, 0, 1) 100%
+  );
+}
+
+.Jazz {
+  background: rgba(252, 0, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 0, 107, 1) 0%,
+    rgba(252, 0, 252, 1) 100%
+  );
+}
+
+.Classical {
+  background: rgba(251, 167, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 71, 0, 1) 0%,
+    rgba(251, 167, 0, 1) 100%
+  );
+}
+
+.Gospel {
+  background: rgba(168, 0, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 0, 107, 1) 0%,
+    rgba(168, 0, 252, 1) 100%
+  );
+}
+
+.Cinema {
+  background: rgba(246, 246, 110, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(107, 107, 0, 1) 0%,
+    rgba(246, 246, 110, 1) 100%
+  );
+}
+
+.Blues {
+  background: rgba(136, 0, 255, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(55, 0, 103, 1) 0%,
+    rgba(136, 0, 255, 1) 100%
+  );
+}
+
+.World {
+  background: rgba(167, 251, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 107, 0, 1) 0%,
+    rgba(167, 251, 0, 1) 100%
+  );
+}
+
+.Metal {
+  background: rgba(0, 0, 168, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 71, 1) 0%,
+    rgba(0, 0, 168, 1) 100%
+  );
+}
+
+.Reggae {
+  background: rgba(135, 254, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(57, 107, 0, 1) 0%,
+    rgba(135, 254, 0, 1) 100%
+  );
+}
+
+.Rock {
+  background: rgba(0, 0, 255, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 107, 1) 0%,
+    rgba(0, 0, 255, 1) 100%
+  );
+}
+
+.Soul {
+  background: rgba(0, 251, 0, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 103, 0, 1) 0%,
+    rgba(0, 251, 0, 1) 100%
+  );
+}
+
+.Vocal {
+  background: rgba(0, 134, 252, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 57, 107, 1) 0%,
+    rgba(0, 134, 252, 1) 100%
+  );
+}
+
+.Funk {
+  background: rgba(0, 251, 134, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 107, 57, 1) 0%,
+    rgba(0, 251, 134, 1) 100%
+  );
+}
+
+.Pop {
+  background: rgba(93, 253, 253, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 103, 103, 1) 0%,
+    rgba(93, 253, 253, 1) 100%
+  );
+}
+
+.Disco {
+  background: rgba(0, 251, 167, 1);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 107, 71, 1) 0%,
+    rgba(0, 251, 167, 1) 100%
+  );
+}
