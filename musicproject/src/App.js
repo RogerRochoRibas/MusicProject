@@ -1,14 +1,14 @@
 import "./css/Slider.css";
 import "./css/Button.css";
 import "./css/TrackList.css"
+import "./css/MainPanel.css"
 import React from "react";
-import { Slider } from "./Slider";
-import { ChangeSongs } from "./ChangeSongs"
-import { TrackList } from "./TrackList";
-import { GenreSelector } from "./GenreSelector";
+import { ChangeSongs } from "./components/ChangeSongs"
+import { TrackList } from "./components/TrackList";
+import { MainPanel } from "./components/MainPanel"
 
 function App() {
-  const [musicList, setMusicList] = React.useState([]);
+  const [musicList, setMusicList] = React.useState([])
   const [trackList, setTrackList] = React.useState([])
   const [trackValence, setTrackValence] = React.useState(500000)
   const [trackArousal, setTrackArousal] = React.useState(500000)
@@ -53,13 +53,12 @@ function App() {
   return (
     <div className="App">
       <h1>Music Project</h1>
-      <Slider setTrack={setTrackValence} identifier='Happy' identifierTwo='Sad'></Slider>
-      <Slider setTrack={setTrackArousal} identifier='Energetic' identifierTwo='Calm'></Slider>
-      <GenreSelector/>
+      <MainPanel setTrackValence={setTrackValence} setTrackArousal={setTrackArousal} fetchMain={() => fetchMain()}/>
       <ChangeSongs fetchMain={()=>fetchMain()}></ChangeSongs>
       <div className='Tracks'><TrackList trackList={trackList}/></div>
     </div>
   );
 }
 
+export const ContextProvider = React.createContext()
 export default App;

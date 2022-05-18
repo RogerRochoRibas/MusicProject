@@ -1,0 +1,17 @@
+#MainPanel {
+    color: rgb(160, 160, 160);
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+    width: 400px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+#MainPanel > h2 {
+    background: -webkit-linear-gradient(50deg,rgba(249, 0, 165, 1), rgb(48, 158, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

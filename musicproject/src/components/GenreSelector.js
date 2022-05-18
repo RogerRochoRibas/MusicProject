@@ -1,7 +1,9 @@
+import React from "react";
+
 export function GenreSelector(props) {
   return (
-    <div id='genreGrid'>
-    <GenreButton genre="Rap" />
+    <div id="genreGrid">
+      <GenreButton genre="Rap" />
       <GenreButton genre="Electro" />
       <GenreButton genre="Randb" />
       <GenreButton genre="Latino" />
@@ -25,15 +27,13 @@ export function GenreSelector(props) {
 
 function GenreButton(props) {
   return (
-    <div>
       <article className={props.genre}>
-        <div className='genreBox'>
-        <input type="checkbox" />
-        <div>
-          <span className="genre">{props.genre}</span>
-        </div>
+        <div className="genreBox">
+          <input type="checkbox" />
+          <div>
+            <span className="genre">{props.genre}</span>
+          </div>
         </div>
       </article>
-    </div>
   );
 }

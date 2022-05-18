@@ -1,5 +1,5 @@
 .slider {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .heat-slider--h {
@@ -43,7 +43,7 @@
   --slider-radius: 0.4em;
   --slider-handle-size: 1em;
   --p: 50%;
-  width: 30em;
+  width: 20em;
 }
 
 .heat-slider--input {
