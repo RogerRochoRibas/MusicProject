@@ -1,7 +1,7 @@
 export function Slider(props) {
   const output = document.getElementById(props.identifier);
 
-  const doThings = (events) => {
+  const changeSliderValue = (events) => {
     const { value, min, max, parentElement: parent } = events.target;
     const percent = `${(((value - min) / (max - min)) * 100).toFixed(0)}%`;
     parent.style.setProperty("--p", percent);
@@ -19,7 +19,7 @@ export function Slider(props) {
             type="range"
             min="0"
             max="100"
-            onChange={(e) => doThings(e)}
+            onChange={(e) => changeSliderValue(e)}
           />
         </span>
       </label>

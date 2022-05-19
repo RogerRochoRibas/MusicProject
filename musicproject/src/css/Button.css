@@ -96,11 +96,11 @@ article div {
 }
 
 .Electro {
-  background: rgba(245, 0, 0, 1);
+  background: rgba(230, 0, 30, 1);
   background: linear-gradient(
     90deg,
-    rgba(107, 0, 0, 1) 0%,
-    rgba(245, 0, 0, 1) 100%
+    rgba(107, 40, 10, 1) 0%,
+    rgba(249, 60, 10, 1) 100%
   );
 }
 
@@ -118,7 +118,7 @@ article div {
   background: linear-gradient(
     90deg,
     rgba(107, 28, 0, 1) 0%,
-    rgba(249, 66, 0, 1) 100%
+    rgba(249, 96, 20, 1) 100%
   );
 }
 

@@ -12,6 +12,7 @@ function App() {
   const [trackList, setTrackList] = React.useState([])
   const [trackValence, setTrackValence] = React.useState(500000)
   const [trackArousal, setTrackArousal] = React.useState(500000)
+  const [genreNo, setGenreNo] = React.useState([])
 
   //Needs 'Moesif Origin & CORS Changer' extension to work in production
   /* Ejemplos de parametros
@@ -53,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <h1>Music Project</h1>
-      <MainPanel setTrackValence={setTrackValence} setTrackArousal={setTrackArousal} fetchMain={() => fetchMain()}/>
+      <MainPanel genreNo={genreNo} setGenreNo={setGenreNo} setTrackValence={setTrackValence} setTrackArousal={setTrackArousal} fetchMain={() => fetchMain()}/>
       <ChangeSongs fetchMain={()=>fetchMain()}></ChangeSongs>
       <div className='Tracks'><TrackList trackList={trackList}/></div>
     </div>

@@ -5,13 +5,14 @@
     width: 400px;
     border-radius: 10px;
     position: absolute;
-    top: 40%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    left: 10%;
 }
 
 #MainPanel > h2 {
     background: -webkit-linear-gradient(50deg,rgba(249, 0, 165, 1), rgb(48, 158, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-block-end: 0.3em;
+  margin-block-start: 0.3em;
 }

@@ -16,7 +16,7 @@ export function MainPanel(props) {
         identifier="Energetic"
         identifierTwo="Calm"
       ></Slider>
-      <GenreSelector />
+      <GenreSelector  genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
       <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
     </div>
   );
