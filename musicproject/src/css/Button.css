@@ -37,6 +37,10 @@
 }
 
 /*Genre Buttons*/
+.genre {
+  font-weight: bold;
+}
+
 #genreGrid {
   max-width: 300px;
   height:400px;
@@ -81,10 +85,6 @@ article div {
   cursor: pointer;
 }
 
-.genreBox > input[type="checkbox"]:checked ~ div {
-  background-color: #50bcf2;
-}
-
 /*Genre Colors*/
 .Rap {
   background: rgba(249, 0, 0, 1);
@@ -93,6 +93,13 @@ article div {
     rgba(107, 0, 28, 1) 0%,
     rgba(249, 0, 0, 1) 100%
   );
+}
+
+.Rap > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(249, 0, 0, 1);
+  border:2px solid rgba(249, 0, 0, 1);
+  border-radius: 10px;
 }
 
 .Electro {
@@ -104,13 +111,27 @@ article div {
   );
 }
 
-.Randb {
+.Electro > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(249, 60, 10, 1);
+  border:2px solid rgba(249, 60, 10, 1);
+  border-radius: 10px;
+}
+
+.RandB {
   background: rgba(249, 0, 165, 1);
   background: linear-gradient(
     90deg,
     rgba(107, 0, 71, 1) 0%,
     rgba(249, 0, 165, 1) 100%
   );
+}
+
+.RandB > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(249, 0, 165, 1);
+  border:2px solid rgba(249, 0, 165, 1);
+  border-radius: 10px;
 }
 
 .Latino {
@@ -122,13 +143,27 @@ article div {
   );
 }
 
-.Jazz {
+.Latino > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(249, 66, 0, 1);
+  border:2px solid rgba(249, 66, 0, 1);
+  border-radius: 10px;
+}
+
+.Hip-Hop {
   background: rgba(252, 0, 252, 1);
   background: linear-gradient(
     90deg,
     rgba(107, 0, 107, 1) 0%,
     rgba(252, 0, 252, 1) 100%
   );
+}
+
+.Hip-Hop > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(252, 0, 252, 1);
+  border:2px solid rgba(252, 0, 252, 1);
+  border-radius: 10px;
 }
 
 .Classical {
@@ -140,13 +175,27 @@ article div {
   );
 }
 
-.Gospel {
+.Classical > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(251, 167, 0, 1);
+  border:2px solid rgba(251, 167, 0, 1);
+  border-radius: 10px;
+}
+
+.Jazz {
   background: rgba(168, 0, 252, 1);
   background: linear-gradient(
     90deg,
     rgba(71, 0, 107, 1) 0%,
     rgba(168, 0, 252, 1) 100%
   );
+}
+
+.Jazz > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(168, 0, 252, 1);
+  border:2px solid rgba(168, 0, 252, 1);
+  border-radius: 10px;
 }
 
 .Cinema {
@@ -158,6 +207,13 @@ article div {
   );
 }
 
+.Cinema > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgb(192, 192, 0);
+  border:2px solid rgb(196, 196, 0);
+  border-radius: 10px;
+}
+
 .Blues {
   background: rgba(136, 0, 255, 1);
   background: linear-gradient(
@@ -165,6 +221,13 @@ article div {
     rgba(55, 0, 103, 1) 0%,
     rgba(136, 0, 255, 1) 100%
   );
+}
+
+.Blues > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(136, 0, 255, 1);
+  border:2px solid rgba(136, 0, 255, 1);
+  border-radius: 10px;
 }
 
 .World {
@@ -176,6 +239,13 @@ article div {
   );
 }
 
+.World > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgb(132, 197, 0);
+  border:2px solid rgb(122, 183, 0);
+  border-radius: 10px;
+}
+
 .Metal {
   background: rgba(0, 0, 168, 1);
   background: linear-gradient(
@@ -183,6 +253,13 @@ article div {
     rgba(0, 0, 71, 1) 0%,
     rgba(0, 0, 168, 1) 100%
   );
+}
+
+.Metal > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(0, 0, 168, 1);
+  border:2px solid rgba(0, 0, 168, 1);
+  border-radius: 10px;
 }
 
 .Reggae {
@@ -194,6 +271,13 @@ article div {
   );
 }
 
+.Reggae > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgb(100, 187, 0);
+  border:2px solid rgb(102, 191, 0);
+  border-radius: 10px;
+}
+
 .Rock {
   background: rgba(0, 0, 255, 1);
   background: linear-gradient(
@@ -203,13 +287,27 @@ article div {
   );
 }
 
-.Soul {
+.Rock > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(0, 0, 255, 1);
+  border:2px solid rgba(0, 0, 255, 1);
+  border-radius: 10px;
+}
+
+.Folk {
   background: rgba(0, 251, 0, 1);
   background: linear-gradient(
     90deg,
     rgba(0, 103, 0, 1) 0%,
     rgba(0, 251, 0, 1) 100%
   );
+}
+
+.Folk > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(0, 251, 0, 1);
+  border:2px solid rgba(0, 251, 0, 1);
+  border-radius: 10px;
 }
 
 .Vocal {
@@ -221,13 +319,27 @@ article div {
   );
 }
 
-.Funk {
+.Vocal > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(0, 134, 252, 1);
+  border:2px solid rgba(0, 134, 252, 1);
+  border-radius: 10px;
+}
+
+.Country {
   background: rgba(0, 251, 134, 1);
   background: linear-gradient(
     90deg,
     rgba(0, 107, 57, 1) 0%,
     rgba(0, 251, 134, 1) 100%
   );
+}
+
+.Country > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgba(0, 251, 134, 1);
+  border:2px solid rgba(0, 251, 134, 1);
+  border-radius: 10px;
 }
 
 .Pop {
@@ -239,6 +351,13 @@ article div {
   );
 }
 
+.Pop > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgb(71, 194, 194);
+  border:2px solid rgb(68, 214, 214);
+  border-radius: 10px;
+}
+
 .Disco {
   background: rgba(0, 251, 167, 1);
   background: linear-gradient(
@@ -246,4 +365,11 @@ article div {
     rgba(0, 107, 71, 1) 0%,
     rgba(0, 251, 167, 1) 100%
   );
+}
+
+.Disco > .genreBox > input[type="checkbox"]:checked ~ div{
+  background-color: #ffffff;
+  color:rgb(0, 199, 133);
+  border:2px solid rgb(0, 185, 123);
+  border-radius: 10px;
 }

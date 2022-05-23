@@ -1,16 +1,43 @@
 #MainPanel {
-    color: rgb(160, 160, 160);
-    padding: 20px 40px;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
-    width: 400px;
-    border-radius: 10px;
-    position: absolute;
-    top: 10%;
-    left: 10%;
+  color: rgb(60, 60, 60);
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+  width: 400px;
+  border-radius: 10px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 #MainPanel > h2 {
-    background: -webkit-linear-gradient(50deg,rgba(249, 0, 165, 1), rgb(48, 158, 255));
+  background: -webkit-linear-gradient(
+    50deg,
+    rgba(249, 0, 165, 1),
+    rgb(48, 158, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-block-end: 0.3em;
+  margin-block-start: 0.3em;
+}
+
+.heat-slider--label h3:first-of-type {
+  background: -webkit-linear-gradient(
+    50deg,
+    rgba(48, 158, 255),
+    rgb(65, 255, 17)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-block-end: 0.3em;
+  margin-block-start: 0.3em;
+}
+.heat-slider--label h3:last-of-type {
+  background: -webkit-linear-gradient(
+    50deg,
+    rgb(174, 174, 27),
+    rgb(255, 17, 17)
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-block-end: 0.3em;
