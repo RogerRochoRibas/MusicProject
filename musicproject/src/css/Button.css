@@ -23,7 +23,7 @@
 
 .bn39 .bn39span {
   align-items: center;
-  background: #ffffff;
+  background: #000000;
   border-radius: 6px;
   display: flex;
   justify-content: center;
@@ -118,7 +118,7 @@ article div {
   border-radius: 10px;
 }
 
-.RandB {
+.HipHop {
   background: rgba(249, 0, 165, 1);
   background: linear-gradient(
     90deg,
@@ -127,7 +127,7 @@ article div {
   );
 }
 
-.RandB > .genreBox > input[type="checkbox"]:checked ~ div{
+.HipHop > .genreBox > input[type="checkbox"]:checked ~ div{
   background-color: #ffffff;
   color:rgba(249, 0, 165, 1);
   border:2px solid rgba(249, 0, 165, 1);
@@ -150,7 +150,7 @@ article div {
   border-radius: 10px;
 }
 
-.Hip-Hop {
+.Jazz {
   background: rgba(252, 0, 252, 1);
   background: linear-gradient(
     90deg,
@@ -159,7 +159,7 @@ article div {
   );
 }
 
-.Hip-Hop > .genreBox > input[type="checkbox"]:checked ~ div{
+.Jazz > .genreBox > input[type="checkbox"]:checked ~ div{
   background-color: #ffffff;
   color:rgba(252, 0, 252, 1);
   border:2px solid rgba(252, 0, 252, 1);
@@ -182,7 +182,7 @@ article div {
   border-radius: 10px;
 }
 
-.Jazz {
+.Blues {
   background: rgba(168, 0, 252, 1);
   background: linear-gradient(
     90deg,
@@ -191,7 +191,7 @@ article div {
   );
 }
 
-.Jazz > .genreBox > input[type="checkbox"]:checked ~ div{
+.Blues > .genreBox > input[type="checkbox"]:checked ~ div{
   background-color: #ffffff;
   color:rgba(168, 0, 252, 1);
   border:2px solid rgba(168, 0, 252, 1);
@@ -214,19 +214,19 @@ article div {
   border-radius: 10px;
 }
 
-.Blues {
-  background: rgba(136, 0, 255, 1);
+.European {
+  background: rgb(111, 0, 255);
   background: linear-gradient(
     90deg,
-    rgba(55, 0, 103, 1) 0%,
-    rgba(136, 0, 255, 1) 100%
+    rgb(43, 0, 103) 0%,
+    rgb(98, 0, 255) 100%
   );
 }
 
-.Blues > .genreBox > input[type="checkbox"]:checked ~ div{
+.European > .genreBox > input[type="checkbox"]:checked ~ div{
   background-color: #ffffff;
-  color:rgba(136, 0, 255, 1);
-  border:2px solid rgba(136, 0, 255, 1);
+  color:rgb(76, 0, 255);
+  border:2px solid rgb(76, 0, 255);
   border-radius: 10px;
 }
 
