@@ -17,7 +17,7 @@
   justify-content: space-between;
 }
 
-.heat-slider--label > h3 {
+.heat-slider--label > h2 {
   width: auto;
   margin-bottom: 0;
 }
@@ -177,6 +177,6 @@ output {
   opacity: 0.4;
 }
 
-h3 {
+h2 {
   margin: 0;
 }

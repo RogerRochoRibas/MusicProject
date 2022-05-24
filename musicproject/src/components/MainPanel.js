@@ -5,7 +5,7 @@ import { GenreSelector } from "./GenreSelector";
 export function MainPanel(props) {
   return (
     <div id="MainPanel">
-        <h2>Main Panel</h2>
+        <img id="logo" alt="page logo" src={require('../musical-notes.png')}/><h1>Musicaster</h1>
       <Slider
         setTrack={props.setTrackValence}
         identifier="Happy"

@@ -3,7 +3,6 @@ import "./css/Button.css";
 import "./css/TrackList.css"
 import "./css/MainPanel.css"
 import React from "react";
-import { ChangeSongs } from "./components/ChangeSongs"
 import { TrackList } from "./components/TrackList";
 import { MainPanel } from "./components/MainPanel"
 
@@ -55,11 +54,11 @@ function App() {
   function fetchMain() {
     let Rap = '';let Electro = '';let HipHop = '';let Latino = '';let Jazz = ''; let Classical = '';let Blues = '';let Cinema = '';let European = '';
     let World = '';let Metal = '';let Reggae = '';let Rock = '';let Folk = '';let Vocal = '';let Country = '';let Pop = '';let Disco = '';
-    if(genreNo.Rap) {Rap = 'gangsta rap,rap r%2526b,'};
+    if(genreNo.Rap) {Rap = 'gangsta rap,rap randb'};// rap r%26b,
     if(genreNo.Electro) {Electro = 'big beat,breakbeat,broken-beat,dance electro,dj,downbeat,ambient,drum-and-bass,dubstep,electro,electro ambient,electro atmospheric,electro latin,electro minimal,electroclash,electronica,eurodance,house,jungle,techno,trance,'};
-    if(genreNo.HipHop) {HipHop = 'dirty-south,hip-hop,trap,trip-hop,'};
+    if(genreNo.HipHop) {HipHop = 'dirty-south,hip hop,trap,trip-hop,'};
     if(genreNo.Latino) {Latino = 'bachata,mambo,mpb,reggaeton,salsa,samba,latino,'};
-    if(genreNo.Jazz) {Jazz = 'jazz,acid-jazz,bebop,blue-eyed-soul,chicago-soul,dixieland,free jazz,funk,fusion jazz,hard bop,jazz electro,jazz latin,jazz piano,jazz rock,jazz sax,jazzy,lounge,manouche,motown,quiet storm,r&b,swing,'};
+    if(genreNo.Jazz) {Jazz = 'jazz,acid-jazz,bebop,blue-eyed-soul,chicago-soul,dixieland,free jazz,funk,fusion jazz,hard bop,jazz electro,jazz latin,jazz piano,jazz rock,jazz sax,jazzy,lounge,manouche,motown,quiet storm,swing,randb'};//r%26b
     if(genreNo.Classical) {Classical = 'big-band,classical,classical ballet,classical baroque,classical cello,classical chamber,classical classicism,classical concerto,classical contemporary,classical guitar,classical harp,classical lied,classical modern,classical opera,classical piano,classical reinassance,classical romantic,classical sacred,classical symphonic,classical trumpet,classical violon,dancehall,modern-classical,clásica,classical,classica,classique,classique ballet,classique baroque,classique chambre,classique concertos,classique contemporain,classique moderne,classique opera,classique piano,classique romantique,classique sacré,classique symphonique,classique violon,classique violoncelle,classique vocal,danser tempo assez lent,dîner,dîner romantique,Klassik,Klassisk,'};
     if(genreNo.Blues) {Blues = 'blues,acoustic blues,delta blues,blues jazz,blues roots,blues soul,chicago-blues,doo-wop,electric blues,soul,southern-soul,'};
     if(genreNo.Cinema) {Cinema = 'cinema action,cinema adventure,cinema animation,cinema biopic,cinema bollywood,cinema comedy,cinema drama,cinema fantasy,cinema history,cinema horror,cinema martial art,cinema musical,cinema nature,cinema peplum,cinema romance,cinema science fiction,cinema spy,cinema thriller,cinema tragicomedy,cinema war, cinema western,soundtrack,cinéma comédie dramatique,cinema tragicomedy,cinéma dessin animé,cinema animation,cinéma dramatique,cinema drama,cinéma espionnage,cinéma spy,cinéma guerre,cinema war,cinéma horreur,cinema horror,'};
@@ -69,7 +68,7 @@ function App() {
     if(genreNo.Reggae) {Reggae = 'baile funk,dub,ragga,rasta,reggae,rocksteady,ska,ska-punk,'};
     if(genreNo.Rock) {Rock = "blues rock,darkwave,emo,French rock,fusion rock,glam,gothic,grunge,guitar hero,hard-rock,indie rock,kraut rock,new-wave,psychedelic,punk,rock,rock'n'roll,rockabilly,showgaxe,"};
     if(genreNo.Folk) {Folk = 'brazilian folk,folk,folklore,celtic,flamenco,gypsy,tango,'};
-    if(genreNo.Vocal) {Vocal = 'classical vocal,vocal jazz, vocal pop,'};
+    if(genreNo.Vocal) {Vocal = 'classical vocal,vocal jazz,vocal pop,'};
     if(genreNo.Country) {Country = 'baroque pop, boys-band, brit-pop,bubblegum,british-invasion,cantautori,euro pop,eurovision,French pop,girlsband,indie pop,orchestral pop,pop,pop latin,power pop,synthpop,teen,new-age,reading news,'};
     if(genreNo.Pop) {Pop = 'baroque pop, boys-band, brit-pop,bubblegum,british-invasion,cantautori,euro pop,eurovision,French pop,girlsband,indie pop,orchestral pop,pop,pop latin,power pop,synthpop,teen,new-age,reading news,'};
     if(genreNo.Disco) {Disco = 'disco,garage,'};
@@ -89,9 +88,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Music Project</h1>
       <MainPanel genreNo={genreNo} setGenreNo={setGenreNo} setTrackValence={setTrackValence} setTrackArousal={setTrackArousal} fetchMain={() => fetchMain()}/>
-      
       <div className='Tracks'><TrackList trackList={trackList}/></div>
     </div>
   );

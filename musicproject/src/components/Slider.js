@@ -12,7 +12,7 @@ export function Slider(props) {
   return (
     <div className='slider'>
       <label className="heat-slider heat-slider--v">
-        <div className="heat-slider--label"><h3>{props.identifierTwo}</h3><h3>{props.identifier}</h3></div>
+        <div className="heat-slider--label"><h2>{props.identifierTwo}</h2><h2>{props.identifier}</h2></div>
         <span className="heat-slider--input">
           <input
             id="slider"

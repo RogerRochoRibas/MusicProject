@@ -9,11 +9,16 @@
   right: 0%;
 }
 
-#MainPanel > h2 {
+#logo {
+  width: auto;
+  height:80px;
+}
+
+#MainPanel > h1 {
   background: -webkit-linear-gradient(
     50deg,
     rgba(249, 0, 165, 1),
-    rgb(48, 158, 255)
+    rgb(255, 199, 79)
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -21,7 +26,7 @@
   margin-block-start: 0.3em;
 }
 
-.heat-slider--label h3:first-of-type {
+.heat-slider--label h2:first-of-type {
   background: -webkit-linear-gradient(
     50deg,
     rgba(48, 158, 255),
@@ -32,7 +37,7 @@
   margin-block-end: 0.3em;
   margin-block-start: 0.3em;
 }
-.heat-slider--label h3:last-of-type {
+.heat-slider--label h2:last-of-type {
   background: -webkit-linear-gradient(
     50deg,
     rgb(174, 174, 27),
