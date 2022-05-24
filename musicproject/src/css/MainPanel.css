@@ -4,7 +4,9 @@
   padding: 20px 40px;
   width: 400px;
   height:100%;
+  min-height: 800px;
   position: absolute;
+  padding-bottom:20px;
   top: 0%;
   right: 0%;
 }
