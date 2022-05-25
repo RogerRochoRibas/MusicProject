@@ -1,6 +1,6 @@
 /*Get Songs Button*/
 .bn39 {
-  background-image: linear-gradient(135deg, #008aff, #86d472);
+  background-image: linear-gradient(135deg, #008aff, #f3310f);
   border-radius: 6px;
   box-sizing: border-box;
   color: #00ae40;
@@ -43,8 +43,8 @@
 
 #genreGrid {
   max-width: 300px;
-  height:375px;
-  margin:auto;
+  height: 375px;
+  margin: auto;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -95,10 +95,10 @@ article div {
   );
 }
 
-.Rap > .genreBox > input[type="checkbox"]:checked ~ div{
+.Rap > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(249, 0, 0, 1);
-  border:2px solid rgba(249, 0, 0, 1);
+  color: rgba(249, 0, 0, 1);
+  border: 2px solid rgba(249, 0, 0, 1);
   border-radius: 10px;
 }
 
@@ -111,10 +111,10 @@ article div {
   );
 }
 
-.Electro > .genreBox > input[type="checkbox"]:checked ~ div{
+.Electro > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(249, 60, 10, 1);
-  border:2px solid rgba(249, 60, 10, 1);
+  color: rgba(249, 60, 10, 1);
+  border: 2px solid rgba(249, 60, 10, 1);
   border-radius: 10px;
 }
 
@@ -127,14 +127,14 @@ article div {
   );
 }
 
-.HipHop > .genreBox > input[type="checkbox"]:checked ~ div{
+.HipHop > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(249, 0, 165, 1);
-  border:2px solid rgba(249, 0, 165, 1);
+  color: rgba(249, 0, 165, 1);
+  border: 2px solid rgba(249, 0, 165, 1);
   border-radius: 10px;
 }
 
-.Latino {
+.Cinema {
   background: rgba(249, 66, 0, 1);
   background: linear-gradient(
     90deg,
@@ -143,10 +143,10 @@ article div {
   );
 }
 
-.Latino > .genreBox > input[type="checkbox"]:checked ~ div{
+.Cinema > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(249, 66, 0, 1);
-  border:2px solid rgba(249, 66, 0, 1);
+  color: rgba(249, 66, 0, 1);
+  border: 2px solid rgba(249, 66, 0, 1);
   border-radius: 10px;
 }
 
@@ -159,10 +159,10 @@ article div {
   );
 }
 
-.Jazz > .genreBox > input[type="checkbox"]:checked ~ div{
+.Jazz > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(252, 0, 252, 1);
-  border:2px solid rgba(252, 0, 252, 1);
+  color: rgba(252, 0, 252, 1);
+  border: 2px solid rgba(252, 0, 252, 1);
   border-radius: 10px;
 }
 
@@ -175,10 +175,10 @@ article div {
   );
 }
 
-.Classical > .genreBox > input[type="checkbox"]:checked ~ div{
+.Classical > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(251, 167, 0, 1);
-  border:2px solid rgba(251, 167, 0, 1);
+  color: rgba(251, 167, 0, 1);
+  border: 2px solid rgba(251, 167, 0, 1);
   border-radius: 10px;
 }
 
@@ -191,14 +191,14 @@ article div {
   );
 }
 
-.Blues > .genreBox > input[type="checkbox"]:checked ~ div{
+.Blues > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(168, 0, 252, 1);
-  border:2px solid rgba(168, 0, 252, 1);
+  color: rgba(168, 0, 252, 1);
+  border: 2px solid rgba(168, 0, 252, 1);
   border-radius: 10px;
 }
 
-.Cinema {
+.Soul {
   background: rgba(246, 246, 110, 1);
   background: linear-gradient(
     90deg,
@@ -207,26 +207,22 @@ article div {
   );
 }
 
-.Cinema > .genreBox > input[type="checkbox"]:checked ~ div{
+.Soul > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(192, 192, 0);
-  border:2px solid rgb(196, 196, 0);
+  color: rgb(192, 192, 0);
+  border: 2px solid rgb(196, 196, 0);
   border-radius: 10px;
 }
 
 .European {
   background: rgb(111, 0, 255);
-  background: linear-gradient(
-    90deg,
-    rgb(43, 0, 103) 0%,
-    rgb(98, 0, 255) 100%
-  );
+  background: linear-gradient(90deg, rgb(43, 0, 103) 0%, rgb(98, 0, 255) 100%);
 }
 
-.European > .genreBox > input[type="checkbox"]:checked ~ div{
+.European > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(76, 0, 255);
-  border:2px solid rgb(76, 0, 255);
+  color: rgb(76, 0, 255);
+  border: 2px solid rgb(76, 0, 255);
   border-radius: 10px;
 }
 
@@ -239,10 +235,10 @@ article div {
   );
 }
 
-.World > .genreBox > input[type="checkbox"]:checked ~ div{
+.World > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(132, 197, 0);
-  border:2px solid rgb(122, 183, 0);
+  color: rgb(132, 197, 0);
+  border: 2px solid rgb(122, 183, 0);
   border-radius: 10px;
 }
 
@@ -255,10 +251,10 @@ article div {
   );
 }
 
-.Metal > .genreBox > input[type="checkbox"]:checked ~ div{
+.Metal > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(0, 0, 168, 1);
-  border:2px solid rgba(0, 0, 168, 1);
+  color: rgba(0, 0, 168, 1);
+  border: 2px solid rgba(0, 0, 168, 1);
   border-radius: 10px;
 }
 
@@ -271,10 +267,10 @@ article div {
   );
 }
 
-.Reggae > .genreBox > input[type="checkbox"]:checked ~ div{
+.Reggae > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(100, 187, 0);
-  border:2px solid rgb(102, 191, 0);
+  color: rgb(100, 187, 0);
+  border: 2px solid rgb(102, 191, 0);
   border-radius: 10px;
 }
 
@@ -287,10 +283,10 @@ article div {
   );
 }
 
-.Rock > .genreBox > input[type="checkbox"]:checked ~ div{
+.Rock > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(0, 0, 255, 1);
-  border:2px solid rgba(0, 0, 255, 1);
+  color: rgba(0, 0, 255, 1);
+  border: 2px solid rgba(0, 0, 255, 1);
   border-radius: 10px;
 }
 
@@ -303,10 +299,10 @@ article div {
   );
 }
 
-.Folk > .genreBox > input[type="checkbox"]:checked ~ div{
+.Folk > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(0, 251, 0, 1);
-  border:2px solid rgba(0, 251, 0, 1);
+  color: rgba(0, 251, 0, 1);
+  border: 2px solid rgba(0, 251, 0, 1);
   border-radius: 10px;
 }
 
@@ -319,10 +315,10 @@ article div {
   );
 }
 
-.Vocal > .genreBox > input[type="checkbox"]:checked ~ div{
+.Vocal > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(0, 134, 252, 1);
-  border:2px solid rgba(0, 134, 252, 1);
+  color: rgba(0, 134, 252, 1);
+  border: 2px solid rgba(0, 134, 252, 1);
   border-radius: 10px;
 }
 
@@ -335,10 +331,10 @@ article div {
   );
 }
 
-.Country > .genreBox > input[type="checkbox"]:checked ~ div{
+.Country > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgba(0, 251, 134, 1);
-  border:2px solid rgba(0, 251, 134, 1);
+  color: rgba(0, 251, 134, 1);
+  border: 2px solid rgba(0, 251, 134, 1);
   border-radius: 10px;
 }
 
@@ -351,14 +347,14 @@ article div {
   );
 }
 
-.Pop > .genreBox > input[type="checkbox"]:checked ~ div{
+.Pop > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(71, 194, 194);
-  border:2px solid rgb(68, 214, 214);
+  color: rgb(71, 194, 194);
+  border: 2px solid rgb(68, 214, 214);
   border-radius: 10px;
 }
 
-.Disco {
+.Funk {
   background: rgba(0, 251, 167, 1);
   background: linear-gradient(
     90deg,
@@ -367,9 +363,45 @@ article div {
   );
 }
 
-.Disco > .genreBox > input[type="checkbox"]:checked ~ div{
+.Funk > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
-  color:rgb(0, 199, 133);
-  border:2px solid rgb(0, 185, 123);
+  color: rgb(0, 199, 133);
+  border: 2px solid rgb(0, 185, 123);
   border-radius: 10px;
+}
+
+.allGenres {
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 3px;
+  position: relative;
+  text-decoration: none;
+  width: 80px;
+  z-index: 2;
+  border-color: #ffffff;
+  margin: 5px;
+}
+
+#All {
+  background-image: linear-gradient(135deg, #dfc21d, #c12828);
+  color: #e71c41;
+}
+
+#None {
+  background-image: linear-gradient(135deg, #00bbff, #5bbe43);
+  color: #21d6ca;
+}
+
+.allGenresSpan {
+  align-items: center;
+  background: #000000;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
 }

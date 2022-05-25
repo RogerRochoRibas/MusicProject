@@ -1,6 +1,6 @@
 import { Slider } from "./Slider";
 import { ChangeSongs } from "./ChangeSongs";
-import { GenreSelector } from "./GenreSelector";
+import { GenreSelector,AllGenres } from "./GenreSelector";
 
 export function MainPanel(props) {
   return (
@@ -16,7 +16,8 @@ export function MainPanel(props) {
         identifier="Energetic"
         identifierTwo="Calm"
       ></Slider>
-      <GenreSelector  genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
+      <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
+      <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
       <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
     </div>
   );

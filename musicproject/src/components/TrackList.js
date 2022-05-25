@@ -11,5 +11,5 @@ export function TrackList(props) {
       );
     });
     return SongsMounted;
-  }
+  } else {return <div>Getting songs from Musicovery...</div>}
 }

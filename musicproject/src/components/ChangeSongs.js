@@ -7,7 +7,7 @@ export function ChangeSongs(props) {
       className="bn39"
       href="/"
     >
-      <span class="bn39span">Get Songs</span>
+      <span className="bn39span">Get Songs</span>
     </button>
   );
 }
