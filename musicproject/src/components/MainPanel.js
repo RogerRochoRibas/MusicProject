@@ -1,11 +1,12 @@
 import { Slider } from "./Slider";
 import { ChangeSongs } from "./ChangeSongs";
-import { GenreSelector,AllGenres } from "./GenreSelector";
+import { GenreSelector, AllGenres } from "./GenreSelector";
 
 export function MainPanel(props) {
   return (
     <div id="MainPanel">
-        <img id="logo" alt="page logo" src={require('../musical-notes.png')}/><h1>Musicaster</h1>
+      <img id="logo" alt="page logo" src={require("../musical-notes.png")} />
+      <h1>Musicaster</h1>
       <Slider
         setTrack={props.setTrackValence}
         identifier="Happy"
@@ -16,8 +17,8 @@ export function MainPanel(props) {
         identifier="Energetic"
         identifierTwo="Calm"
       ></Slider>
-      <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
-      <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo}/>
+      <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
+      <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
       <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
     </div>
   );

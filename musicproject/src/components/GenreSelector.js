@@ -1,7 +1,6 @@
 import React from "react";
 
 export function GenreSelector(props) {
-  
   return (
     <div id="genreGrid">
       <GenreButton genreNo={props.genreNo} setGenreNo={props.setGenreNo} genre="Rap" />
@@ -28,32 +27,57 @@ export function GenreSelector(props) {
 
 function GenreButton(props) {
   function changeGenre(genre) {
-    let newGenre = {...props.genreNo};
-    if (newGenre[genre]) {newGenre[genre]=false}
-    else {newGenre[genre]=true}
+    let newGenre = { ...props.genreNo };
+    if (newGenre[genre]) {
+      newGenre[genre] = false;
+    } else {
+      newGenre[genre] = true;
+    }
     props.setGenreNo(newGenre);
   }
   return (
-      <article className={props.genre}>
-        <div className="genreBox">
-          <input type="checkbox" id={props.genre} onClick={e => changeGenre(props.genre)} />
-          <div>
-            <span className="genre">{props.genre}</span>
-          </div>
+    <article className={props.genre}>
+      <div className="genreBox">
+        <input
+          type="checkbox"
+          id={props.genre}
+          onClick={(e) => changeGenre(props.genre)}
+        />
+        <div>
+          <span className="genre">{props.genre}</span>
         </div>
-      </article>
+      </div>
+    </article>
   );
 }
 
 export function AllGenres(props) {
   function allGenreToggle(value) {
-    let newGenre = {...props.genreNo};
-    Object.keys(newGenre).forEach(key => {newGenre[key] = value})
-    Object.keys(newGenre).forEach(key => document.getElementById(key).checked=value)
-    props.setGenreNo(newGenre)
+    let newGenre = { ...props.genreNo };
+    Object.keys(newGenre).forEach((key) => {
+      newGenre[key] = value;
+    });
+    Object.keys(newGenre).forEach(
+      (key) => (document.getElementById(key).checked = value)
+    );
+    props.setGenreNo(newGenre);
   }
-  return <div>
-    <button className="allGenres" id='All' onClick={e => allGenreToggle(false)}><span className="allGenresSpan">All</span></button>
-    <button className="allGenres" id='None' onClick={e => allGenreToggle(true)}><span className="allGenresSpan">None</span></button>
-  </div>
+  return (
+    <div>
+      <button
+        className="allGenres"
+        id="All"
+        onClick={(e) => allGenreToggle(false)}
+      >
+        <span className="allGenresSpan">All</span>
+      </button>
+      <button
+        className="allGenres"
+        id="None"
+        onClick={(e) => allGenreToggle(true)}
+      >
+        <span className="allGenresSpan">None</span>
+      </button>
+    </div>
+  );
 }
