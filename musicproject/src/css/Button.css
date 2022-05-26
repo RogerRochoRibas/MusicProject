@@ -86,7 +86,7 @@ article div {
 }
 
 /*Genre Colors*/
-.Rap {
+#genreGrid .Rap {
   background: rgba(249, 0, 0, 1);
   background: linear-gradient(
     90deg,
@@ -95,14 +95,14 @@ article div {
   );
 }
 
-.Rap > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Rap > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(249, 0, 0, 1);
   border: 2px solid rgba(249, 0, 0, 1);
   border-radius: 10px;
 }
 
-.Electro {
+#genreGrid .Electro {
   background: rgba(230, 0, 30, 1);
   background: linear-gradient(
     90deg,
@@ -111,14 +111,14 @@ article div {
   );
 }
 
-.Electro > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Electro > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(249, 60, 10, 1);
   border: 2px solid rgba(249, 60, 10, 1);
   border-radius: 10px;
 }
 
-.HipHop {
+#genreGrid .HipHop {
   background: rgba(249, 0, 165, 1);
   background: linear-gradient(
     90deg,
@@ -127,14 +127,14 @@ article div {
   );
 }
 
-.HipHop > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .HipHop > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(249, 0, 165, 1);
   border: 2px solid rgba(249, 0, 165, 1);
   border-radius: 10px;
 }
 
-.Cinema {
+#genreGrid .Cinema {
   background: rgba(249, 66, 0, 1);
   background: linear-gradient(
     90deg,
@@ -143,14 +143,14 @@ article div {
   );
 }
 
-.Cinema > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Cinema > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(249, 66, 0, 1);
   border: 2px solid rgba(249, 66, 0, 1);
   border-radius: 10px;
 }
 
-.Jazz {
+#genreGrid .Jazz {
   background: rgba(252, 0, 252, 1);
   background: linear-gradient(
     90deg,
@@ -159,14 +159,14 @@ article div {
   );
 }
 
-.Jazz > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Jazz > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(252, 0, 252, 1);
   border: 2px solid rgba(252, 0, 252, 1);
   border-radius: 10px;
 }
 
-.Classical {
+#genreGrid .Classical {
   background: rgba(251, 167, 0, 1);
   background: linear-gradient(
     90deg,
@@ -175,14 +175,14 @@ article div {
   );
 }
 
-.Classical > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Classical > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(251, 167, 0, 1);
   border: 2px solid rgba(251, 167, 0, 1);
   border-radius: 10px;
 }
 
-.Blues {
+#genreGrid .Blues {
   background: rgba(168, 0, 252, 1);
   background: linear-gradient(
     90deg,
@@ -191,14 +191,14 @@ article div {
   );
 }
 
-.Blues > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Blues > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(168, 0, 252, 1);
   border: 2px solid rgba(168, 0, 252, 1);
   border-radius: 10px;
 }
 
-.Soul {
+#genreGrid .Soul {
   background: rgba(246, 246, 110, 1);
   background: linear-gradient(
     90deg,
@@ -207,26 +207,26 @@ article div {
   );
 }
 
-.Soul > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Soul > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(192, 192, 0);
   border: 2px solid rgb(196, 196, 0);
   border-radius: 10px;
 }
 
-.European {
+#genreGrid .European {
   background: rgb(111, 0, 255);
   background: linear-gradient(90deg, rgb(43, 0, 103) 0%, rgb(98, 0, 255) 100%);
 }
 
-.European > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .European > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(76, 0, 255);
   border: 2px solid rgb(76, 0, 255);
   border-radius: 10px;
 }
 
-.World {
+#genreGrid .World {
   background: rgba(167, 251, 0, 1);
   background: linear-gradient(
     90deg,
@@ -235,14 +235,14 @@ article div {
   );
 }
 
-.World > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .World > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(132, 197, 0);
   border: 2px solid rgb(122, 183, 0);
   border-radius: 10px;
 }
 
-.Metal {
+#genreGrid .Metal {
   background: rgba(0, 0, 168, 1);
   background: linear-gradient(
     90deg,
@@ -251,14 +251,14 @@ article div {
   );
 }
 
-.Metal > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Metal > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(0, 0, 168, 1);
   border: 2px solid rgba(0, 0, 168, 1);
   border-radius: 10px;
 }
 
-.Reggae {
+#genreGrid .Reggae {
   background: rgba(135, 254, 0, 1);
   background: linear-gradient(
     90deg,
@@ -267,14 +267,14 @@ article div {
   );
 }
 
-.Reggae > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Reggae > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(100, 187, 0);
   border: 2px solid rgb(102, 191, 0);
   border-radius: 10px;
 }
 
-.Rock {
+#genreGrid .Rock {
   background: rgba(0, 0, 255, 1);
   background: linear-gradient(
     90deg,
@@ -283,14 +283,14 @@ article div {
   );
 }
 
-.Rock > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Rock > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(0, 0, 255, 1);
   border: 2px solid rgba(0, 0, 255, 1);
   border-radius: 10px;
 }
 
-.Folk {
+#genreGrid .Folk {
   background: rgba(0, 251, 0, 1);
   background: linear-gradient(
     90deg,
@@ -299,14 +299,14 @@ article div {
   );
 }
 
-.Folk > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Folk > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(0, 251, 0, 1);
   border: 2px solid rgba(0, 251, 0, 1);
   border-radius: 10px;
 }
 
-.Vocal {
+#genreGrid .Vocal {
   background: rgba(0, 134, 252, 1);
   background: linear-gradient(
     90deg,
@@ -315,14 +315,14 @@ article div {
   );
 }
 
-.Vocal > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Vocal > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(0, 134, 252, 1);
   border: 2px solid rgba(0, 134, 252, 1);
   border-radius: 10px;
 }
 
-.Country {
+#genreGrid .Country {
   background: rgba(0, 251, 134, 1);
   background: linear-gradient(
     90deg,
@@ -331,14 +331,14 @@ article div {
   );
 }
 
-.Country > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Country > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(0, 251, 134, 1);
   border: 2px solid rgba(0, 251, 134, 1);
   border-radius: 10px;
 }
 
-.Pop {
+#genreGrid .Pop {
   background: rgba(93, 253, 253, 1);
   background: linear-gradient(
     90deg,
@@ -347,14 +347,14 @@ article div {
   );
 }
 
-.Pop > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Pop > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(71, 194, 194);
   border: 2px solid rgb(68, 214, 214);
   border-radius: 10px;
 }
 
-.Funk {
+#genreGrid .Funk {
   background: rgba(0, 251, 167, 1);
   background: linear-gradient(
     90deg,
@@ -363,7 +363,7 @@ article div {
   );
 }
 
-.Funk > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Funk > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(0, 199, 133);
   border: 2px solid rgb(0, 185, 123);

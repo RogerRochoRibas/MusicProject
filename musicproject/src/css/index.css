@@ -1,5 +1,10 @@
+#root {
+  min-width:100%;
+}
+
 .App {
   text-align: center;
+  min-width:100vh
 }
 
 .App-logo {
