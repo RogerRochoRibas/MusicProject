@@ -1,6 +1,5 @@
 .trackContainer {
-  width: calc(100% - 600px);
-  padding-left: 100px;
+  width: calc(100% - 400px);
   padding-top: 50px;
 }
 
@@ -19,12 +18,12 @@
 
 .Tracks li {
 	display: inline-block;
-	width: 20vh;
+	width: 180px;
 	position: relative;
 	vertical-align: top;
 	margin: 15px;
 	font-family: 'helvetica', san-serif;
-	min-height: 20vh;
+	min-height: 180px;
 	background: #fffefe;
 	border: 1px solid #252727;
 	text-align: left;
