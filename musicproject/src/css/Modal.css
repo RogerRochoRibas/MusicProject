@@ -1,0 +1,55 @@
+
+.modal {
+    color: rgb(160, 160, 160);
+    padding: 20px 40px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+    width: 300px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    background-color: #181818;
+    z-index: 3;
+  }
+  
+.modal-bg {
+    background-color: rgba(0, 0, 0, 0.405);
+  }
+
+  .modal-close {
+    color: #aaa;
+    line-height: 50px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    text-decoration: none;
+  }
+  
+  .submit {
+    background: #fcdb4b;
+    color: #000000;
+    border-radius: 2px;
+    padding: 8px 12px;
+    border: solid #fcdb4b 3px;
+  }
+  
+  .error {
+    color: red;
+    border: solid red 2px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .errorText {
+    color: red;
+    display: block;
+  }
+  
+  .link {
+    color: #edd700;
+    text-decoration: underline;
+  }

@@ -2,6 +2,8 @@ import "./css/Slider.css";
 import "./css/Button.css";
 import "./css/TrackList.css";
 import "./css/MainPanel.css";
+import "./css/Logbtn.css"
+import "./css/Modal.css"
 import React from "react";
 import { TrackList } from "./components/TrackList";
 import { MainPanel } from "./components/MainPanel";
@@ -14,6 +16,7 @@ import { firebaseConfig} from "./firebase"
 import { InputName} from "./firebase"
 
 function App() {
+  const [logged, setLogged] = React.useState(false)
   const [users, setUsers] = React.useState([])
   const [trackList, setTrackList] = React.useState([]);
   const [trackValence, setTrackValence] = React.useState(500000);
