@@ -10,10 +10,11 @@ import { MainPanel } from "./components/MainPanel";
 import { dataExample } from "./dataExample";
 import {db} from "./firebase"
 import { collection, getDocs } from "firebase/firestore";
-import {usersCollection} from "./firebase"
+import { usersCollection } from "./firebase"
 import { getFirestore } from "@firebase/firestore"
 import { firebaseConfig} from "./firebase"
 import { InputName} from "./firebase"
+import classNames from "classnames";
 
 function App() {
   const [logged, setLogged] = React.useState(false)
@@ -161,13 +162,6 @@ function App() {
  
   React.useEffect(() => {
     fetchMain();
-    const getUsers = async () => {
-      const data = await getDocs(usersCollection)
-      setUsers(data.docs.map((doc) => ({ ...doc.data(),id: doc.id })))
-      console.log(data.docs)
-    }
-
-    getUsers()
   }, []);
 
   return (
@@ -178,6 +172,8 @@ function App() {
         setTrackValence={setTrackValence}
         setTrackArousal={setTrackArousal}
         fetchMain={() => fetchMain()}
+        setLogged={setLogged}
+        logged={logged}
       />
       <div className="trackContainer">
         <ul className="Tracks">

@@ -3,7 +3,7 @@ export function LoginButton(props) {
   if (!props.logged) {
     return (
       <button
-        onClick={() => {props.setLoginScreen(true)}}
+        onClick={() => {props.setLoginScreen('login')}}
         id="loginButton"
         className="logbtn"
         href="/"
@@ -19,8 +19,8 @@ export function LoginButton(props) {
     );
   }
   if (props.logged) {
-    <button
-      onClick={() => {props.logout();}}
+    return (<button
+      onClick={() => {props.setLogged(false);}}
       id="logoutButton"
       className="logbtn"
       href="/"
@@ -32,6 +32,6 @@ export function LoginButton(props) {
         src={require("../img/icon-logout.png")}
       />
       <p>Logout</p>
-    </button>;
+    </button>);
   }
 }

@@ -1,55 +1,125 @@
-
 .modal {
-    color: rgb(160, 160, 160);
-    padding: 20px 40px;
-    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
-    width: 300px;
-    border-radius: 10px;
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    background-color: #181818;
-    z-index: 3;
-  }
-  
-.modal-bg {
-    background-color: rgba(0, 0, 0, 0.405);
-  }
+  color: rgb(70, 70, 70);
+  padding: 20px 40px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 30%);
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 3;
+  border-top: 20px solid #3acfd5;
+  border-bottom: 20px solid #f5e71e;
 
-  .modal-close {
-    color: #aaa;
-    line-height: 50px;
-    position: absolute;
-    right: 0;
-    text-align: center;
-    top: 0;
-    width: 70px;
-    text-decoration: none;
-  }
-  
-  .submit {
-    background: #fcdb4b;
-    color: #000000;
-    border-radius: 2px;
-    padding: 8px 12px;
-    border: solid #fcdb4b 3px;
-  }
-  
-  .error {
-    color: red;
-    border: solid red 2px;
-  }
-  
-  .hide {
-    display: none;
-  }
-  
-  .errorText {
-    color: red;
-    display: block;
-  }
-  
-  .link {
-    color: #edd700;
-    text-decoration: underline;
-  }
+  border-left: 20px solid #3ad542;
+  border-right: 20px solid #d53a3a;
+}
+
+.full-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.modal-bg {
+  background-color: rgba(0, 0, 0, 0.405);
+}
+
+.modal-content {
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.changeModal {
+  margin:10px;
+  color: rgb(60, 60, 60);
+}
+
+.changeModal button {
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.modal-close {
+  color: rgb(60, 60, 60);
+  text-decoration: none;
+  margin:10px;
+  padding:0px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.submit {border-radius: 6px;
+  box-sizing: border-box;
+  height: 40px;
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 3px;
+  position: relative;
+  text-decoration: none;
+  width: 80px;
+  z-index: 2;
+  border-color: 5px solid rgb(43, 255, 237);
+  margin: 5px;
+}
+
+.submitSpan {
+  align-items: center;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.error {
+  color: red;
+  border: solid red 2px;
+}
+
+.hide {
+  display: none;
+}
+
+.errorText {
+  color: red;
+  display: block;
+}
+
+.link {
+  color: #edd700;
+  text-decoration: underline;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.title {
+  margin: 10px;
+}
+
+
+input[type="text"]:focus {
+  border-radius: 5px solid #2ba0ff;
+  color: #300bff;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  height: 30px;
+  line-height: 40px;
+  padding:0 5px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 10px;
+}
