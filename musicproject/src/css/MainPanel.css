@@ -5,7 +5,7 @@
   width: 400px;
   height:100%;
   min-height: 800px;
-  position: absolute;
+  position: fixed;
   padding-bottom:20px;
   top: 0%;
   right: 0%;
@@ -22,6 +22,7 @@
     rgba(249, 0, 165, 1),
     rgb(255, 199, 79)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-block-end: 0.3em;
@@ -34,6 +35,7 @@
     rgba(48, 158, 255),
     rgb(65, 255, 17)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-block-end: 0.3em;
@@ -45,6 +47,7 @@
     rgb(174, 174, 27),
     rgb(255, 17, 17)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-block-end: 0.3em;

@@ -2,12 +2,23 @@ import "./css/Slider.css";
 import "./css/Button.css";
 import "./css/TrackList.css";
 import "./css/MainPanel.css";
+import "./css/Logbtn.css"
+import "./css/Modal.css"
 import React from "react";
 import { TrackList } from "./components/TrackList";
 import { MainPanel } from "./components/MainPanel";
 import { dataExample } from "./dataExample";
+import {db} from "./firebase"
+import { collection, getDocs } from "firebase/firestore";
+import { usersCollection } from "./firebase"
+import { getFirestore } from "@firebase/firestore"
+import { firebaseConfig} from "./firebase"
+import { InputName} from "./firebase"
+import classNames from "classnames";
 
 function App() {
+  const [logged, setLogged] = React.useState(false)
+  const [users, setUsers] = React.useState([])
   const [trackList, setTrackList] = React.useState([]);
   const [trackValence, setTrackValence] = React.useState(500000);
   const [trackArousal, setTrackArousal] = React.useState(500000);
@@ -135,11 +146,11 @@ function App() {
     if (genreNo.Funk) {
       Funk = "baile funk,funk,";
     }
-
+/*
     fetch(
       `https://musicovery.com/api/V6/playlist.php?&fct=getfrommood&popularitymax=100&popularitymin=50&starttrackid=&trackvalence=${trackValence}&trackarousal=${trackArousal}&resultsnumber=15&genreNo=${Rap}${Electro}${HipHop}${Soul}${Metal}${World}${European}${Cinema}${Funk}${Classical}${Reggae}${Rock}${Vocal}${Pop}${Country}${Folk}${Jazz}${Blues}`
     )
-      /*.then((response) => response.json())
+      .then((response) => response.json())
       .then((music) => {
         console.log("music request: ", music.request);
         console.log("music tracks: ", music);
@@ -161,6 +172,8 @@ function App() {
         setTrackValence={setTrackValence}
         setTrackArousal={setTrackArousal}
         fetchMain={() => fetchMain()}
+        setLogged={setLogged}
+        logged={logged}
       />
       <div className="trackContainer">
         <ul className="Tracks">

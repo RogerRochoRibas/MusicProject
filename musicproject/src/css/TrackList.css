@@ -1,6 +1,5 @@
 .trackContainer {
-  width: calc(100% - 600px);
-  padding-left: 100px;
+  width: calc(100% - 400px);
   padding-top: 50px;
 }
 
@@ -19,12 +18,12 @@
 
 .Tracks li {
 	display: inline-block;
-	width: 20vh;
+	width: 180px;
 	position: relative;
 	vertical-align: top;
 	margin: 15px;
 	font-family: 'helvetica', san-serif;
-	min-height: 20vh;
+	min-height: 180px;
 	background: #fffefe;
 	border: 1px solid #252727;
 	text-align: left;
@@ -51,44 +50,7 @@
 	color: #202020;
 	margin-top: 5px;
 }
-.Tracks li button {
-	background: transparent;
-	border: 1px solid #b7b7b7;
-	padding: 10px 20px;
-	color: #000000;
-	border-radius: 3px;
-	position: relative;
-	transition: all 0.3s ease-in-out;
-	transform: translateY(-40px);
-	opacity: 0;
-	cursor: pointer;
-	overflow: hidden;
-}
-.Tracks li button:before {
-	content: '';
-	position: absolute;
-	height: 100%;
-	width: 120%;
-	background: #b7b7b7;
-	top: 0;
-	opacity: 0;
-	left: -140px;
-	border-radius: 0 20px 20px 0;
-	z-index: -1;
-	transition: all 0.3s ease-in-out;
-	
-}
-.Tracks li:hover button {
-	transform: translateY(5px);
-	opacity: 1;
-}
-.Tracks li button:hover {
-	color: #020202;
-}
-.Tracks li button:hover:before {
-	left: 0;
-	opacity: 1;
-}
+
 .Tracks li:hover h2 {
 	top: 0px;
 	opacity: 0.6;
