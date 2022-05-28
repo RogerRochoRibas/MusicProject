@@ -3,7 +3,7 @@ export function TrackList(props) {
   if (props.trackList.length > 0) {
     let SongsMounted = props.trackList.map((element, index) => {
       return (
-        <li className={`track ${element.genre}`}>
+        <li key={element.title} className={`track ${element.genre}`}>
           <h2>{element.genre}</h2>
           <div className="centerTrack">
             <h3 className="track_title">{element.title}</h3>

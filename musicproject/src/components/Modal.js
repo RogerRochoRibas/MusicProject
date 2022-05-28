@@ -122,7 +122,7 @@ export function Modal(props) {
               </button>
             </form>
             <p className="changeModal">
-              No need?
+              Allready did?
               <button
                 onClick={() => {
                   props.setLoginScreen("login");

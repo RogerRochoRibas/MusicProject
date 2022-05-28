@@ -32,9 +32,11 @@
   background-color: rgba(0, 0, 0, 0.405);
 }
 
+
+
 .modal-content {
   position:relative;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -58,7 +60,8 @@
   font-weight: bold;
 }
 
-.submit {border-radius: 6px;
+.submit {
+  border-radius: 6px;
   box-sizing: border-box;
   height: 40px;
   font-size: 1.2em;
@@ -70,6 +73,8 @@
   z-index: 2;
   border-color: 5px solid rgb(43, 255, 237);
   margin: 5px;
+  background-color: #3acfd5;
+  color:white
 }
 
 .submitSpan {
