@@ -5,6 +5,7 @@ import { LoginButton } from "./LoginButton";
 import { Modal } from "./Modal";
 import React from "react";
 import { SuccessScreen } from "./SuccessScreen";
+import { SaveTracks } from "./SaveTracks";
 
 export function MainPanel(props) {
   const [loginScreen, setLoginScreen] = React.useState("");
@@ -27,6 +28,7 @@ export function MainPanel(props) {
         <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
         <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
         <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
+        <SaveTracks/>
         <LoginButton
           setLoginScreen={setLoginScreen}
           loginScreen={loginScreen}

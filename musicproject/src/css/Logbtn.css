@@ -10,9 +10,20 @@
   width: auto;
 }
 
-.logbtn p {
+.logbtn p, .savebtn p {
   color: white;
   margin: 0px;
   font-size: medium;
   font-weight: bold;
+}
+
+.savebtn {
+  background-color: rgba(0, 0, 0, 0);
+  width:80px;
+}
+
+#saveLoad {
+  margin-top: 30px;
+  display:flex;
+  justify-content: center;
 }
