@@ -141,13 +141,10 @@ function App() {
     }
     let musicoveryURL = `https://musicovery.com/api/V6/playlist.php?&fct=getfrommood&popularitymax=100&popularitymin=50&starttrackid=&trackvalence=${trackValence}&trackarousal=${trackArousal}&resultsnumber=15&genreNo=${Rap}${Electro}${HipHop}${Soul}${Metal}${World}${European}${Cinema}${Funk}${Classical}${Reggae}${Rock}${Vocal}${Pop}${Country}${Folk}${Jazz}${Blues}`;
 
-    /* axios
-      .get(musicoveryURL */
-        //, {headers: {"Access-Control-Allow-Origin": "*",
-        //  "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",},}
-         /* )
-       .then((music) => {
-        console.log("music request: ", music.request);
+    axios
+      .get(musicoveryURL)
+      .then((music) => {
+        console.log("music request: ", music);
         console.log("music tracks: ", music.data.tracks.track);
         if (music.data.tracks) {
           setTrackList(music.data.tracks.track);
@@ -155,10 +152,13 @@ function App() {
         if (!music.data.tracks && trackList) {
           console.log("No new tracks");
         }
-        if (!music.data.tracks && !trackList) { */
+        if (!music.data.tracks && !trackList) {
           setTrackList(dataExample);
-        /* }
-      }); */
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   }
 
   React.useEffect(() => {

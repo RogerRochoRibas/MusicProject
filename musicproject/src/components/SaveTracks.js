@@ -1,5 +1,5 @@
 export function SaveTracks(props) {
-    if (props.logged) {
+    if (!props.logged) {
       return (<div id="saveLoad">
         <button
           onClick={() => {
