@@ -26,10 +26,6 @@
   z-index: 999;
 }
 
-.modal-bg {
-  background-color: rgba(0, 0, 0, 0.405);
-}
-
 .modal-content {
   position: relative;
   top: 45%;
@@ -133,30 +129,30 @@ input[type="password"] {
 
 .show {
   display: inherit;
-  animation: move-around 10s;
+  animation: move-around 5s;
 }
 
 @keyframes move-around {
   0% {
     left: 0px;
-    transform: rotate(2turn);
+    transform: rotate(1.5turn);
     display:initial;
   }
   20% {
     left: calc(50vw - 150px);
-    transform: rotate(4turn);
+    transform: rotate(3turn);
     display:initial;
   }
   50% {
     left: calc(50vw - 150px);
     opacity: 100%;
-    transform: rotate(4turn);
+    transform: rotate(3turn);
     display:initial;
   }
   70% {
     opacity: 50%;
     left:  calc(90vw - 300px);
-    transform: rotate(6turn);
+    transform: rotate(5turn);
     opacity: 0%;
     display:initial;
   }

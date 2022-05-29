@@ -9,7 +9,7 @@ export function Modal(props) {
 
   const createUser = async () => {
     await addDoc(usersCollection, { name: name, pass: pass });
-    props.setLoginScreen("login");
+    props.setLoginScreen("false");
     props.setSuccessScreen(true);
     await new Promise((resolve) => {
       setTimeout(() => {
@@ -102,7 +102,7 @@ export function Modal(props) {
             <form id="login">
               <input
                 type="text"
-                spellcheck="false"
+                spellCheck="false"
                 placeholder="User Name"
                 onChange={(event) => {
                   setName(event.target.value);
@@ -110,7 +110,7 @@ export function Modal(props) {
               />
               <input
                 type="password"
-                spellcheck="false"
+                spellCheck="false"
                 placeholder="Password"
                 onChange={(event) => {
                   setPass(event.target.value);
