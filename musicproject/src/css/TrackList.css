@@ -5,255 +5,566 @@
 
 .Tracks {
   padding: 0;
-	list-style: none;
-	text-align: center;
-  margin:auto;
+  list-style: none;
+  text-align: center;
+  margin: auto;
 }
 
 .centerTrack {
   position: absolute;
   top: 20%;
-  padding:15px;
+  padding: 15px;
 }
 
 .Tracks li {
-	display: inline-block;
-	width: 180px;
-	position: relative;
-	vertical-align: top;
-	margin: 15px;
-	font-family: 'helvetica', san-serif;
-	min-height: 180px;
-	background: #fffefe;
-	border: 1px solid #252727;
-	text-align: left;
+  display: inline-block;
+  width: 180px;
+  position: relative;
+  vertical-align: top;
+  margin: 15px;
+  font-family: "helvetica", san-serif;
+  min-height: 180px;
+  background: #fffefe;
+  border: 1px solid #252727;
+  text-align: left;
 }
 .Tracks li h2 {
-  color:rgb(0, 0, 0);
-	font-size: 36px;
-	margin: 0;
-	position: absolute;
-	opacity: 0.4;
-	top: 5px;
-	right: 10px;
-	transition: all 0.3s ease-in-out;
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  margin: 0;
+  position: absolute;
+  opacity: 0.4;
+  top: 5px;
+  right: 10px;
+  transition: all 0.3s ease-in-out;
 }
 .track_title {
-	font-size: 22px;
-	color: #3f3f3f;
-	margin-bottom: 5px;
+  font-size: 22px;
+  color: #3f3f3f;
+  margin-bottom: 5px;
   font-weight: bold;
 }
 .track_artist {
-	font-size: 18px;
-	line-height: 18px;
-	color: #202020;
-	margin-top: 5px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #202020;
+  margin-top: 5px;
 }
 
 .Tracks li:hover h2 {
-	top: 0px;
-	opacity: 0.6;
+  top: 0px;
+  opacity: 0.6;
 }
 
 .Tracks li:before {
-	content: '';
-	position: absolute;
-	top: -2px;
-	left: -2px;
-	right: -2px;
-	bottom: -2px;
-	z-index: -1;
-	background: #fff;
-	transform: skew(2deg, 2deg);
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: #fff;
+  transform: skew(2deg, 2deg);
 }
 .Tracks li:after {
-	content: '';
-	position: absolute;
-	width: 40%;
-	height: 100%;
-	left: 0;
-	top: 0;
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
 }
 .Tracks .rap:before {
-  background: -webkit-linear-gradient(to right, rgb(249, 0, 0), rgb(249, 50, 10));
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(249, 0, 0),
+    rgb(249, 50, 10)
+  );
   background: linear-gradient(to right, rgb(249, 0, 0), rgb(249, 50, 10));
 }
 .Tracks .rap:after {
-	background: rgba(255, 32, 32, 0.2);
+  background: rgba(255, 32, 32, 0.2);
 }
 .Tracks .rap {
-  border:2px solid rgb(255, 77, 0);
+  border: 2px solid rgb(255, 77, 0);
 }
 
-.Tracks .electro:before,.Tracks .beat:before,.Tracks .breakbeat:before,.Tracks .broken-beat:before,.Tracks .dj:before,.Tracks .ambient:before,.Tracks .electroclash:before,.Tracks .electronica:before,.Tracks .eurodance:before,.Tracks .jungle:before,.Tracks .techno:before,.Tracks .trance:before {
-  background: -webkit-linear-gradient(to right, rgb(249, 90, 10), rgb(249, 10, 50));
+.Tracks .electro:before,
+.Tracks .beat:before,
+.Tracks .breakbeat:before,
+.Tracks .broken-beat:before,
+.Tracks .dj:before,
+.Tracks .ambient:before,
+.Tracks .electroclash:before,
+.Tracks .electronica:before,
+.Tracks .eurodance:before,
+.Tracks .jungle:before,
+.Tracks .techno:before,
+.Tracks .trance:before {
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(249, 90, 10),
+    rgb(249, 10, 50)
+  );
   background: linear-gradient(to right, rgb(249, 90, 10), rgb(249, 10, 50));
 }
-.Tracks .electro:after,.Tracks .beat:after,.Tracks .breakbeat:after,.Tracks .broken-beat:after,.Tracks .dj:after,.Tracks .ambient:after,.Tracks .electroclash:after,.Tracks .electronica:after,.Tracks .eurodance:after,.Tracks .jungle:after,.Tracks .techno:after,.Tracks .trance:after {
-	background: rgba(225, 72, 7, 0.2);
+.Tracks .electro:after,
+.Tracks .beat:after,
+.Tracks .breakbeat:after,
+.Tracks .broken-beat:after,
+.Tracks .dj:after,
+.Tracks .ambient:after,
+.Tracks .electroclash:after,
+.Tracks .electronica:after,
+.Tracks .eurodance:after,
+.Tracks .jungle:after,
+.Tracks .techno:after,
+.Tracks .trance:after {
+  background: rgba(225, 72, 7, 0.2);
 }
-.Tracks .electro,.Tracks .beat,.Tracks .breakbeat,.Tracks .broken-beat,.Tracks .dj,.Tracks .ambient,.Tracks .electroclash,.Tracks .electronica,.Tracks .eurodance,.Tracks .jungle,.Tracks .techno,.Tracks .trance{
-  border:2px solid rgb(255, 0, 89);
+.Tracks .electro,
+.Tracks .beat,
+.Tracks .breakbeat,
+.Tracks .broken-beat,
+.Tracks .dj,
+.Tracks .ambient,
+.Tracks .electroclash,
+.Tracks .electronica,
+.Tracks .eurodance,
+.Tracks .jungle,
+.Tracks .techno,
+.Tracks .trance {
+  border: 2px solid rgb(255, 0, 89);
 }
 
-.Tracks .hip:before,.Tracks .hiphop:before,.Tracks .dirty-south:before,.Tracks .trap:before,.Tracks .trip-hop:before {
+.Tracks .hip:before,
+.Tracks .hiphop:before,
+.Tracks .dirty-south:before,
+.Tracks .trap:before,
+.Tracks .trip-hop:before {
   background: rgba(249, 0, 135, 1);
 }
-.Tracks .hip:after,.Tracks .hiphop:after,.Tracks .dirty-south:after,.Tracks .trap:after,.Tracks .trip-hop:after {
-	background: rgba(249, 14, 135, 0.2);
+.Tracks .hip:after,
+.Tracks .hiphop:after,
+.Tracks .dirty-south:after,
+.Tracks .trap:after,
+.Tracks .trip-hop:after {
+  background: rgba(249, 14, 135, 0.2);
 }
-.Tracks .hip,.Tracks .hiphop,.Tracks .dirty-south,.Tracks .trap,.Tracks .trip-hop {
-  border:2px solid rgba(249, 0, 135, 1);
+.Tracks .hip,
+.Tracks .hiphop,
+.Tracks .dirty-south,
+.Tracks .trap,
+.Tracks .trip-hop {
+  border: 2px solid rgba(249, 0, 135, 1);
 }
 
-.Tracks .cinema:before,.Tracks .cinéma:before,.Tracks .soundtrack:before {
-  background: -webkit-linear-gradient(to right, rgb(249, 120, 0), rgb(251, 188, 0));
+.Tracks .cinema:before,
+.Tracks .cinéma:before,
+.Tracks .soundtrack:before {
+  background: -webkit-linear-gradient(
+    to right,
+    rgb(249, 120, 0),
+    rgb(251, 188, 0)
+  );
   background: linear-gradient(to right, rgb(249, 120, 0), rgb(251, 188, 0));
 }
-.Tracks .cinema:after,.Tracks .soundtrack:after,.Tracks .cinéma:after {
-	background: rgba(251, 167, 0, 0.2);
+.Tracks .cinema:after,
+.Tracks .soundtrack:after,
+.Tracks .cinéma:after {
+  background: rgba(251, 167, 0, 0.2);
 }
-.Tracks .cinema,.Tracks .cinéma,.Tracks .soundtrack {
-  border:2px solid rgb(249, 153, 0);
-}
-
-.Tracks .jazz:before,.Tracks .acid-jazz:before,.Tracks .bebop:before,.Tracks .dixieland:before,.Tracks .hard-bop:before,.Tracks .jazzy:before,.Tracks .lounge:before,.Tracks .manouche:before,.Tracks .motown:before,.Tracks .storm:before,.Tracks .swing:before,.Tracks .randb:before {
-	background: rgba(252, 0, 252, 1);
-}
-.Tracks .jazz:after,.Tracks .acid-jazz:after,.Tracks .bebop:after,.Tracks .dixieland:after,.Tracks .hard-bop:after,.Tracks .jazzy:after,.Tracks .lounge:after,.Tracks .manouche:after,.Tracks .motown:after,.Tracks .storm:after,.Tracks .swing:after,.Tracks .randb:after {
-	background: rgba(255, 0, 252, 0.2);
-}
-.Tracks .jazz,.Tracks .acid-jazz,.Tracks .bebop,.Tracks .dixieland,.Tracks .hard-bop,.Tracks .jazzy,.Tracks .lounge,.Tracks .manouche,.Tracks .motown,.Tracks .storm,.Tracks .swing,.Tracks .randb {
-  border:2px solid rgba(252, 0, 252, 1);
+.Tracks .cinema,
+.Tracks .cinéma,
+.Tracks .soundtrack {
+  border: 2px solid rgb(249, 153, 0);
 }
 
-.Tracks .classical:before,.Tracks .big-band:before,.Tracks .dancehall:before,.Tracks .modern-classical:before,.Tracks .clásica:before,.Tracks .classica:before,.Tracks .clasique:before,.Tracks .dîner:before,.Tracks .danser:before,.Tracks .Klassik:before,.Tracks .Klassisk:before {
-	background:  rgba(251, 167, 0);
+.Tracks .jazz:before,
+.Tracks .acid-jazz:before,
+.Tracks .bebop:before,
+.Tracks .dixieland:before,
+.Tracks .hard-bop:before,
+.Tracks .jazzy:before,
+.Tracks .lounge:before,
+.Tracks .manouche:before,
+.Tracks .motown:before,
+.Tracks .storm:before,
+.Tracks .swing:before,
+.Tracks .randb:before {
+  background: rgba(252, 0, 252, 1);
 }
-.Tracks .classical:after,.Tracks .big-band:after,.Tracks .dancehall:after,.Tracks .modern-classical:after,.Tracks .clásica:after,.Tracks .classica:after,.Tracks .clasique:after,.Tracks .dîner:after,.Tracks .danser:after,.Tracks .Klassik:after,.Tracks .Klassisk:after {
-	background: rgba(251, 167, 0, 0.2);
+.Tracks .jazz:after,
+.Tracks .acid-jazz:after,
+.Tracks .bebop:after,
+.Tracks .dixieland:after,
+.Tracks .hard-bop:after,
+.Tracks .jazzy:after,
+.Tracks .lounge:after,
+.Tracks .manouche:after,
+.Tracks .motown:after,
+.Tracks .storm:after,
+.Tracks .swing:after,
+.Tracks .randb:after {
+  background: rgba(255, 0, 252, 0.2);
 }
-.Tracks .classical,.Tracks .big-band,.Tracks .dancehall,.Tracks .modern-classical,.Tracks .clásica,.Tracks .classica,.Tracks .clasique,.Tracks .dîner,.Tracks .danser,.Tracks .Klassik,.Tracks .Klassisk {
-  border:2px solid rgb(251, 167, 0);
+.Tracks .jazz,
+.Tracks .acid-jazz,
+.Tracks .bebop,
+.Tracks .dixieland,
+.Tracks .hard-bop,
+.Tracks .jazzy,
+.Tracks .lounge,
+.Tracks .manouche,
+.Tracks .motown,
+.Tracks .storm,
+.Tracks .swing,
+.Tracks .randb {
+  border: 2px solid rgba(252, 0, 252, 1);
 }
 
-.Tracks .blues:before,.Tracks .chicago-blues:before,.Tracks .doo-wop:before {
+.Tracks .classical:before,
+.Tracks .big-band:before,
+.Tracks .dancehall:before,
+.Tracks .modern-classical:before,
+.Tracks .clásica:before,
+.Tracks .classica:before,
+.Tracks .clasique:before,
+.Tracks .dîner:before,
+.Tracks .danser:before,
+.Tracks .Klassik:before,
+.Tracks .Klassisk:before {
+  background: rgba(251, 167, 0);
+}
+.Tracks .classical:after,
+.Tracks .big-band:after,
+.Tracks .dancehall:after,
+.Tracks .modern-classical:after,
+.Tracks .clásica:after,
+.Tracks .classica:after,
+.Tracks .clasique:after,
+.Tracks .dîner:after,
+.Tracks .danser:after,
+.Tracks .Klassik:after,
+.Tracks .Klassisk:after {
+  background: rgba(251, 167, 0, 0.2);
+}
+.Tracks .classical,
+.Tracks .big-band,
+.Tracks .dancehall,
+.Tracks .modern-classical,
+.Tracks .clásica,
+.Tracks .classica,
+.Tracks .clasique,
+.Tracks .dîner,
+.Tracks .danser,
+.Tracks .Klassik,
+.Tracks .Klassisk {
+  border: 2px solid rgb(251, 167, 0);
+}
+
+.Tracks .blues:before,
+.Tracks .chicago-blues:before,
+.Tracks .doo-wop:before {
   background: rgb(190, 0, 127);
 }
-.Tracks .blues:after,.Tracks .chicago-blues:after,.Tracks .doo-wop:after {
-	background: rgba(255, 14, 175, 0.2);
+.Tracks .blues:after,
+.Tracks .chicago-blues:after,
+.Tracks .doo-wop:after {
+  background: rgba(255, 14, 175, 0.2);
 }
-.Tracks .blues,.Tracks .chicago-blues,.Tracks .doo-wop {
-  border:2px solid rgb(190, 0, 127);
+.Tracks .blues,
+.Tracks .chicago-blues,
+.Tracks .doo-wop {
+  border: 2px solid rgb(190, 0, 127);
 }
 
-.Tracks .soul:before,.Tracks .blue-eyed-soul:before,.Tracks .chicago-soul:before,.Tracks .southern-soul:before {
+.Tracks .soul:before,
+.Tracks .blue-eyed-soul:before,
+.Tracks .chicago-soul:before,
+.Tracks .southern-soul:before {
   background: rgb(255, 255, 44);
 }
-.Tracks .soul:after,.Tracks .blue-eyed-soul:after,.Tracks .chicago-soul:after,.Tracks .southern-soul:after {
-	background: rgba(255, 255, 44, 0.2);
+.Tracks .soul:after,
+.Tracks .blue-eyed-soul:after,
+.Tracks .chicago-soul:after,
+.Tracks .southern-soul:after {
+  background: rgba(255, 255, 44, 0.2);
 }
-.Tracks .soul,.Tracks .blue-eyed-soul,.Tracks .chicago-soul,.Tracks .southern-soul {
-  border:2px solid rgb(255, 255, 44);
-}
-
-.Tracks .european:before,.Tracks .flamenco:before,.Tracks .chanson:before,.Tracks .gospel:before,.Tracks .latin:before {
-	background: rgb(111, 0, 255);
-}
-.Tracks .european:after,.Tracks .flamenco:after,.Tracks .chanson:after,.Tracks .gospel:after,.Tracks .latin:after {
-	background: rgba(111, 0, 255, 0.2);
-}
-.Tracks .european,.Tracks .flamenco,.Tracks .chanson,.Tracks .gospel,.Tracks .latin {
-  border:2px solid rgb(111, 0, 255);
+.Tracks .soul,
+.Tracks .blue-eyed-soul,
+.Tracks .chicago-soul,
+.Tracks .southern-soul {
+  border: 2px solid rgb(255, 255, 44);
 }
 
-.Tracks .world:before,.Tracks .african:before,.Tracks .afrobeat:before,.Tracks .americana:before,.Tracks .arabic:before,.Tracks .australian:before,.Tracks .bossa-nova:before,.Tracks .Brazilian:before,.Tracks .Canadian:before,.Tracks .Cuban:before,.Tracks .dance:before,.Tracks .ethnic:before,.Tracks .fado:before,.Tracks .pagode:before,.Tracks .tropicalia:before,.Tracks .world:before {
-	background: rgba(167, 251, 0);
+.Tracks .european:before,
+.Tracks .flamenco:before,
+.Tracks .chanson:before,
+.Tracks .gospel:before,
+.Tracks .latin:before {
+  background: rgb(111, 0, 255);
 }
-.Tracks .world:after,.Tracks .african:after,.Tracks .afrobeat:after,.Tracks .americana:after,.Tracks .arabic:after,.Tracks .australian:after,.Tracks .bossa-nova:after,.Tracks .Brazilian:after,.Tracks .Canadian:after,.Tracks .Cuban:after,.Tracks .dance:after,.Tracks .ethnic:after,.Tracks .fado:after,.Tracks .pagode:after,.Tracks .tropicalia:after,.Tracks .world:after {
-	background: rgba(167, 251, 0, 0.2);
+.Tracks .european:after,
+.Tracks .flamenco:after,
+.Tracks .chanson:after,
+.Tracks .gospel:after,
+.Tracks .latin:after {
+  background: rgba(111, 0, 255, 0.2);
 }
-.Tracks .world,.Tracks .african,.Tracks .afrobeat,.Tracks .americana,.Tracks .arabic,.Tracks .australian,.Tracks .bossa-nova,.Tracks .Brazilian,.Tracks .Canadian,.Tracks .Cuban,.Tracks .dance,.Tracks .ethnic,.Tracks .fado,.Tracks .pagode,.Tracks .tropicalia,.Tracks .world {
-  border:2px solid rgba(167, 251, 0, 1);
-}
-
-.Tracks .metal:before,.Tracks .death:before,.Tracks .screamo:before,.Tracks .sludge:before,.Tracks .thrash:before {
-	background: rgba(0, 0, 168, 1);
-}
-.Tracks .metal:after,.Tracks .death:after,.Tracks .screamo:after,.Tracks .sludge:after,.Tracks .thrash:after {
-	background: rgba(0, 0, 168, 0.2);
-}
-.Tracks .metal,.Tracks .death,.Tracks .screamo,.Tracks .sludge,.Tracks .thrash {
-  border:2px solid rgba(0, 0, 168, 1);
-}
-
-.Tracks .reggae:before,.Tracks .dub:before,.Tracks .ragga:before,.Tracks .rocksteady:before,.Tracks .ska:before,.Tracks .ska-punk:before{
-	background: rgb(125, 235, 0);
-}
-.Tracks .reggae:after,.Tracks .dub:after,.Tracks .ragga:after,.Tracks .rocksteady:after,.Tracks .ska:after,.Tracks .ska-punk:after{
-	background: rgba(121, 227, 0, 0.2);
-}
-.Tracks .reggae,.Tracks .dub,.Tracks .ragga.Tracks .rocksteady,.Tracks .ska,.Tracks .ska-punk{
-  border:2px solid rgba(125, 235, 0, 1);
+.Tracks .european,
+.Tracks .flamenco,
+.Tracks .chanson,
+.Tracks .gospel,
+.Tracks .latin {
+  border: 2px solid rgb(111, 0, 255);
 }
 
-.Tracks .rock:before,.Tracks .darkwave:before,.Tracks .emo:before,.Tracks .glam:before,.Tracks .gothic:before,.Tracks .grunge:before,.Tracks .guitar:before,.Tracks .hard-rock:before,.Tracks .new-wave:before,.Tracks .psychedelic:before,.Tracks .punk:before,.Tracks .rockabilly:before,.Tracks .showgaxe:before {
-	background: rgb(30, 30, 255);
+.Tracks .world:before,
+.Tracks .african:before,
+.Tracks .afrobeat:before,
+.Tracks .americana:before,
+.Tracks .arabic:before,
+.Tracks .australian:before,
+.Tracks .bossa-nova:before,
+.Tracks .Brazilian:before,
+.Tracks .Canadian:before,
+.Tracks .Cuban:before,
+.Tracks .dance:before,
+.Tracks .ethnic:before,
+.Tracks .fado:before,
+.Tracks .pagode:before,
+.Tracks .tropicalia:before,
+.Tracks .world:before {
+  background: rgba(167, 251, 0);
 }
-.Tracks .rock:after,.Tracks .darkwave:after,.Tracks .emo:after,.Tracks .glam:after,.Tracks .gothic:after,.Tracks .grunge:after,.Tracks .guitar:after,.Tracks .hard-rock:after,.Tracks .new-wave:after,.Tracks .psychedelic:after,.Tracks .punk:after,.Tracks .rockabilly:after,.Tracks .showgaxe:after {
-	background: rgba(30, 30, 255, 0.2);
+.Tracks .world:after,
+.Tracks .african:after,
+.Tracks .afrobeat:after,
+.Tracks .americana:after,
+.Tracks .arabic:after,
+.Tracks .australian:after,
+.Tracks .bossa-nova:after,
+.Tracks .Brazilian:after,
+.Tracks .Canadian:after,
+.Tracks .Cuban:after,
+.Tracks .dance:after,
+.Tracks .ethnic:after,
+.Tracks .fado:after,
+.Tracks .pagode:after,
+.Tracks .tropicalia:after,
+.Tracks .world:after {
+  background: rgba(167, 251, 0, 0.2);
 }
-.Tracks .rock,.Tracks .darkwave,.Tracks .emo,.Tracks .glam,.Tracks .gothic,.Tracks .grunge,.Tracks .guitar,.Tracks .hard-rock,.Tracks .new-wave,.Tracks .psychedelic,.Tracks .punk,.Tracks .rockabilly,.Tracks .showgaxe {
-  border:2px solid rgba(30, 30, 255, 1);
+.Tracks .world,
+.Tracks .african,
+.Tracks .afrobeat,
+.Tracks .americana,
+.Tracks .arabic,
+.Tracks .australian,
+.Tracks .bossa-nova,
+.Tracks .Brazilian,
+.Tracks .Canadian,
+.Tracks .Cuban,
+.Tracks .dance,
+.Tracks .ethnic,
+.Tracks .fado,
+.Tracks .pagode,
+.Tracks .tropicalia,
+.Tracks .world {
+  border: 2px solid rgba(167, 251, 0, 1);
 }
 
-.Tracks .folk:before,.Tracks .folklore:before,.Tracks .celtic:before,.Tracks .gypsy:before,.Tracks .tango:before {
-	background: rgba(0, 251, 0, 1);
+.Tracks .metal:before,
+.Tracks .death:before,
+.Tracks .screamo:before,
+.Tracks .sludge:before,
+.Tracks .thrash:before {
+  background: rgba(0, 0, 168, 1);
 }
-.Tracks .folk:after,.Tracks .folklore:after,.Tracks .celtic:after,.Tracks .gypsy:after,.Tracks .tango:after {
-	background: rgba(0, 251, 0, 0.2);
+.Tracks .metal:after,
+.Tracks .death:after,
+.Tracks .screamo:after,
+.Tracks .sludge:after,
+.Tracks .thrash:after {
+  background: rgba(0, 0, 168, 0.2);
 }
-.Tracks .folk,.Tracks .folklore,.Tracks .celtic,.Tracks .gypsy,.Tracks .tango {
-  border:2px solid rgba(0, 251, 0, 1);
+.Tracks .metal,
+.Tracks .death,
+.Tracks .screamo,
+.Tracks .sludge,
+.Tracks .thrash {
+  border: 2px solid rgba(0, 0, 168, 1);
+}
+
+.Tracks .reggae:before,
+.Tracks .dub:before,
+.Tracks .ragga:before,
+.Tracks .rocksteady:before,
+.Tracks .ska:before,
+.Tracks .ska-punk:before {
+  background: rgb(125, 235, 0);
+}
+.Tracks .reggae:after,
+.Tracks .dub:after,
+.Tracks .ragga:after,
+.Tracks .rocksteady:after,
+.Tracks .ska:after,
+.Tracks .ska-punk:after {
+  background: rgba(121, 227, 0, 0.2);
+}
+.Tracks .reggae,
+.Tracks .dub,
+.Tracks .ragga.Tracks .rocksteady,
+.Tracks .ska,
+.Tracks .ska-punk {
+  border: 2px solid rgba(125, 235, 0, 1);
+}
+
+.Tracks .rock:before,
+.Tracks .darkwave:before,
+.Tracks .emo:before,
+.Tracks .glam:before,
+.Tracks .gothic:before,
+.Tracks .grunge:before,
+.Tracks .guitar:before,
+.Tracks .hard-rock:before,
+.Tracks .new-wave:before,
+.Tracks .psychedelic:before,
+.Tracks .punk:before,
+.Tracks .rockabilly:before,
+.Tracks .showgaxe:before {
+  background: rgb(30, 30, 255);
+}
+.Tracks .rock:after,
+.Tracks .darkwave:after,
+.Tracks .emo:after,
+.Tracks .glam:after,
+.Tracks .gothic:after,
+.Tracks .grunge:after,
+.Tracks .guitar:after,
+.Tracks .hard-rock:after,
+.Tracks .new-wave:after,
+.Tracks .psychedelic:after,
+.Tracks .punk:after,
+.Tracks .rockabilly:after,
+.Tracks .showgaxe:after {
+  background: rgba(30, 30, 255, 0.2);
+}
+.Tracks .rock,
+.Tracks .darkwave,
+.Tracks .emo,
+.Tracks .glam,
+.Tracks .gothic,
+.Tracks .grunge,
+.Tracks .guitar,
+.Tracks .hard-rock,
+.Tracks .new-wave,
+.Tracks .psychedelic,
+.Tracks .punk,
+.Tracks .rockabilly,
+.Tracks .showgaxe {
+  border: 2px solid rgba(30, 30, 255, 1);
+}
+
+.Tracks .folk:before,
+.Tracks .folklore:before,
+.Tracks .celtic:before,
+.Tracks .gypsy:before,
+.Tracks .tango:before {
+  background: rgba(0, 251, 0, 1);
+}
+.Tracks .folk:after,
+.Tracks .folklore:after,
+.Tracks .celtic:after,
+.Tracks .gypsy:after,
+.Tracks .tango:after {
+  background: rgba(0, 251, 0, 0.2);
+}
+.Tracks .folk,
+.Tracks .folklore,
+.Tracks .celtic,
+.Tracks .gypsy,
+.Tracks .tango {
+  border: 2px solid rgba(0, 251, 0, 1);
 }
 
 .Tracks .vocal:before {
   background: rgba(0, 134, 252, 1);
 }
 .Tracks .vocal:after {
-	background: rgba(0, 134, 252, 0.2);
+  background: rgba(0, 134, 252, 0.2);
 }
 .Tracks .vocal {
-  border:2px solid rgba(0, 134, 252, 1);
+  border: 2px solid rgba(0, 134, 252, 1);
 }
 
-.Tracks .country:before,.Tracks .bluegrass:before,.Tracks .sertanejo:before {
-	background: rgb(0, 251, 100);
+.Tracks .country:before,
+.Tracks .bluegrass:before,
+.Tracks .sertanejo:before {
+  background: rgb(0, 251, 100);
 }
-.Tracks .country:after,.Tracks .bluegrass:after,.Tracks .sertanejo:after {
-	background: rgba(0, 251, 100, 0.2);
+.Tracks .country:after,
+.Tracks .bluegrass:after,
+.Tracks .sertanejo:after {
+  background: rgba(0, 251, 100, 0.2);
 }
-.Tracks .country,.Tracks .bluegrass,.Tracks .sertanejo {
-  border:2px solid rgba(0, 251, 100, 1);
+.Tracks .country,
+.Tracks .bluegrass,
+.Tracks .sertanejo {
+  border: 2px solid rgba(0, 251, 100, 1);
 }
 
-.Tracks .pop:before,.Tracks .boys-band:before,.Tracks .brit-pop:before,.Tracks .bubblegum:before,.Tracks .british-invasion:before,.Tracks .cantautori:before,.Tracks .aurovision:before,.Tracks .girlsband:before,.Tracks .synthpop:before,.Tracks .teen:before,.Tracks .new-age:before,.Tracks .news:before{
-	background: rgb(18, 255, 255);
+.Tracks .pop:before,
+.Tracks .boys-band:before,
+.Tracks .brit-pop:before,
+.Tracks .bubblegum:before,
+.Tracks .british-invasion:before,
+.Tracks .cantautori:before,
+.Tracks .aurovision:before,
+.Tracks .girlsband:before,
+.Tracks .synthpop:before,
+.Tracks .teen:before,
+.Tracks .new-age:before,
+.Tracks .news:before {
+  background: rgb(18, 255, 255);
 }
-.Tracks .pop:after,.Tracks .boys-band:after,.Tracks .brit-pop:after,.Tracks .bubblegum:after,.Tracks .british-invasion:after,.Tracks .cantautori:after,.Tracks .aurovision:after,.Tracks .girlsband:after,.Tracks .synthpop:after,.Tracks .teen:after,.Tracks .new-age:after,.Tracks .news:after{
-	background: rgba(93, 253, 253, 0.2);
+.Tracks .pop:after,
+.Tracks .boys-band:after,
+.Tracks .brit-pop:after,
+.Tracks .bubblegum:after,
+.Tracks .british-invasion:after,
+.Tracks .cantautori:after,
+.Tracks .aurovision:after,
+.Tracks .girlsband:after,
+.Tracks .synthpop:after,
+.Tracks .teen:after,
+.Tracks .new-age:after,
+.Tracks .news:after {
+  background: rgba(93, 253, 253, 0.2);
 }
-.Tracks .pop,.Tracks .boys-band,.Tracks .brit-pop,.Tracks .bubblegum,.Tracks .british-invasion,.Tracks .cantautori,.Tracks .aurovision,.Tracks .girlsband,.Tracks .synthpop,.Tracks .teen,.Tracks .new-age,.Tracks .news{
-  border:2px solid rgb(18, 255, 255);
+.Tracks .pop,
+.Tracks .boys-band,
+.Tracks .brit-pop,
+.Tracks .bubblegum,
+.Tracks .british-invasion,
+.Tracks .cantautori,
+.Tracks .aurovision,
+.Tracks .girlsband,
+.Tracks .synthpop,
+.Tracks .teen,
+.Tracks .new-age,
+.Tracks .news {
+  border: 2px solid rgb(18, 255, 255);
 }
 
 .Tracks .funk:before {
   background: rgba(0, 251, 167, 1);
 }
 .Tracks .funk:after {
-	background: rgba(0, 251, 167, 0.2);
+  background: rgba(0, 251, 167, 0.2);
 }
 .Tracks .funk {
-  border:2px solid rgba(0, 251, 167, 1);
+  border: 2px solid rgba(0, 251, 167, 1);
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { collection, getDocs, addDoc } from "firebase/firestore";
+import { getDocs, addDoc } from "firebase/firestore";
 import { usersCollection } from "../firebase";
 
 export function Modal(props) {
@@ -23,7 +23,7 @@ export function Modal(props) {
     setUserList(userData.docs.map((doc) => ({ ...doc.data() })));
     for (let i = 0; i < userList.length; i++) {
       console.log("checking: ", userList[i]);
-      if (name == userList[i].name && pass == userList[i].pass) {
+      if (name === userList[i].name && pass === userList[i].pass) {
         console.log("Log In Success");
         props.setLogged(true);
         props.setLoginScreen(false);
@@ -46,13 +46,15 @@ export function Modal(props) {
             <form id="login">
               <input
                 type="text"
+                spellCheck="false"
                 placeholder="User Name"
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
               />
               <input
-                type="text"
+                type="password"
+                spellCheck="false"
                 placeholder="Password"
                 onChange={(event) => {
                   setPass(event.target.value);
@@ -100,13 +102,15 @@ export function Modal(props) {
             <form id="login">
               <input
                 type="text"
+                spellcheck="false"
                 placeholder="User Name"
                 onChange={(event) => {
                   setName(event.target.value);
                 }}
               />
               <input
-                type="text"
+                type="password"
+                spellcheck="false"
                 placeholder="Password"
                 onChange={(event) => {
                   setPass(event.target.value);

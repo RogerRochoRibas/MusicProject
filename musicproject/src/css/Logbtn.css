@@ -1,18 +1,18 @@
 .logbtn {
-    position:absolute;
-    top:20px;
-    right:30px;
-    background-color: rgba(0, 0, 0, 0);
-  }
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: rgba(0, 0, 0, 0);
+}
 
 .logicon {
-    height:50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 .logbtn p {
-    color:white;
-    margin:0px;
-    font-size: medium;
-    font-weight: bold;
+  color: white;
+  margin: 0px;
+  font-size: medium;
+  font-weight: bold;
 }

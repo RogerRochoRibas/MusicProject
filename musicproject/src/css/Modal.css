@@ -6,15 +6,13 @@
   height: 300px;
   border-radius: 50%;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: calc(50% - 150px);
+  left: calc(50% - 150px);
   text-align: center;
   background-color: #ffffff;
   z-index: 3;
   border-top: 20px solid #3acfd5;
   border-bottom: 20px solid #f5e71e;
-
   border-left: 20px solid #3ad542;
   border-right: 20px solid #d53a3a;
 }
@@ -32,17 +30,15 @@
   background-color: rgba(0, 0, 0, 0.405);
 }
 
-
-
 .modal-content {
-  position:relative;
+  position: relative;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .changeModal {
-  margin:10px;
+  margin: 10px;
   color: rgb(60, 60, 60);
 }
 
@@ -54,8 +50,8 @@
 .modal-close {
   color: rgb(60, 60, 60);
   text-decoration: none;
-  margin:10px;
-  padding:0px;
+  margin: 10px;
+  padding: 0px;
   text-align: center;
   font-weight: bold;
 }
@@ -74,7 +70,7 @@
   border-color: 5px solid rgb(43, 255, 237);
   margin: 5px;
   background-color: #3acfd5;
-  color:white
+  color: white;
 }
 
 .submitSpan {
@@ -90,10 +86,6 @@
 .error {
   color: red;
   border: solid red 2px;
-}
-
-.hide {
-  display: none;
 }
 
 .errorText {
@@ -114,17 +106,62 @@
   margin: 10px;
 }
 
-
-input[type="text"]:focus {
-  border-radius: 5px solid #2ba0ff;
-  color: #300bff;
+input[type="text"],
+input[type="password"] {
+  font-weight: bold;
 }
 
-input[type="text"] {
+input[type="text"]:focus,
+input[type="password"]:focus {
+  color: #000000;
+}
+
+input[type="text"],
+input[type="password"] {
   border-radius: 5px;
   height: 30px;
   line-height: 40px;
-  padding:0 5px;
+  padding: 0 5px;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
+}
+
+.login,
+.registration {
+  display: none;
+}
+
+.show {
+  display: inherit;
+  animation: move-around 10s;
+}
+
+@keyframes move-around {
+  0% {
+    left: 0px;
+    transform: rotate(2turn);
+    display:initial;
+  }
+  20% {
+    left: calc(50vw - 150px);
+    transform: rotate(4turn);
+    display:initial;
+  }
+  50% {
+    left: calc(50vw - 150px);
+    opacity: 100%;
+    transform: rotate(4turn);
+    display:initial;
+  }
+  70% {
+    opacity: 50%;
+    left:  calc(90vw - 300px);
+    transform: rotate(6turn);
+    opacity: 0%;
+    display:initial;
+  }
+  100% {
+    opacity: 0%;
+    display:none;
+  }
 }
