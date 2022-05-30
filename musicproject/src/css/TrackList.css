@@ -1,6 +1,7 @@
 .trackContainer {
   width: calc(100% - 400px);
   padding-top: 50px;
+  z-index:1
 }
 
 .Tracks {

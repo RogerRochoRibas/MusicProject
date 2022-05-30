@@ -42,6 +42,7 @@ export function MainPanel(props) {
           setTrackList={props.setTrackList}
           setSuccessScreen={setSuccessScreen}
           setSuccessText={setSuccessText}
+          logged={props.logged}
         />
         <LoginButton
           setLoginScreen={setLoginScreen}

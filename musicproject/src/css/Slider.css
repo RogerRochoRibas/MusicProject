@@ -43,7 +43,6 @@
   --slider-radius: 0.4em;
   --slider-handle-size: 1em;
   --p: 50%;
-  width: 20em;
 }
 
 .heat-slider--input {
