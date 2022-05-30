@@ -1,15 +1,22 @@
 import React from "react";
 import { getDocs, addDoc } from "firebase/firestore";
-import { usersCollection, db } from "../firebase";
+import { usersCollection } from "../firebase";
 
 export function LoginModal(props) {
   const [name, setName] = React.useState("");
   const [pass, setPass] = React.useState("");
-  const [userList, setUserList] = React.useState([]);
 
   const createUser = async () => {
-    await setDoc(dic(db,"users",{name}), { name: name, pass: pass , trackList: props.trackList});
+    await addDoc(usersCollection, {
+      name: name,
+      pass: pass,
+      trackList: props.trackList,
+      trackValence: props.trackValence,
+      trackArousal: props.trackArousal,
+      genreNo: props.genreNo,
+    });
     props.setLoginScreen("false");
+    props.setSuccessText('Register Successful')
     props.setSuccessScreen(true);
     await new Promise((resolve) => {
       setTimeout(() => {
@@ -19,12 +26,14 @@ export function LoginModal(props) {
   };
   const validateUser = async () => {
     const userData = await getDocs(usersCollection);
-    setUserList(userData.docs.map((doc) => ({ ...doc.data() })));
-    for (let i = 0; i < userList.length; i++) {
-      if (name === userList[i].name && pass === userList[i].pass) {
+    props.setUserList(userData.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+    for (let i = 0; i < props.userList.length; i++) {
+      if (name === props.userList[i].name && pass === props.userList[i].pass) {
         props.setLogged(true);
         props.setLoginScreen(false);
+        props.setSuccessText('Log In Successful');
         props.setSuccessScreen(true);
+        props.setUserID(props.userList[i].id);
         await new Promise((resolve) => {
           setTimeout(() => {
             resolve(props.setSuccessScreen(false));

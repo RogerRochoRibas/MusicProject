@@ -38,7 +38,7 @@ function App() {
 
   //To run in windows 10 use Run (ejecutar) and insert: chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
   //For windows 11 you can create a shortcut to: "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --disable-gpu --user-data-dir=~/chromeTemp
-  
+
   // to get cover art: https://musicbrainz.org/doc/Cover_Art_Archive/API
   // or https://developers.music-story.com/developers/artist
   // night mode toogle https://codepen.io/daviddarnes/pen/LdGYVG
@@ -92,8 +92,7 @@ function App() {
         "cinema action,cinema adventure,cinema animation,cinema biopic,cinema bollywood,cinema comedy,cinema drama,cinema fantasy,cinema history,cinema horror,cinema martial art,cinema musical,cinema nature,cinema peplum,cinema romance,cinema science fiction,cinema spy,cinema thriller,cinema tragicomedy,cinema war,cinema western,soundtrack,cinéma comédie dramatique,cinema tragicomedy,cinéma dessin animé,cinema animation,cinéma dramatique,cinema drama,cinéma espionnage,cinéma spy,cinéma guerre,cinema war,cinéma horreur,cinema horror,";
     }
     if (genreNo.Latin) {
-      Latin =
-        "latin,";
+      Latin = "latin,";
     }
     if (genreNo.World) {
       World =
@@ -128,17 +127,15 @@ function App() {
     }
     let musicoveryURL = `https://musicovery.com/api/V6/playlist.php?&fct=getfrommood&popularitymax=100&popularitymin=50&starttrackid=&trackvalence=${trackValence}&trackarousal=${trackArousal}&resultsnumber=15&genreNo=${Rap}${Electro}${HipHop}${Soul}${Metal}${World}${Latin}${Cinema}${Funk}${Classical}${Reggae}${Rock}${Vocal}${Pop}${Country}${Folk}${Jazz}${Blues}`;
 
-    /* axios
-      .get(musicoveryURL)
-      .then((music) => {
-        if (music.data.tracks) {
-          console.log(music.data.tracks.track)
-          setTrackList(music.data.tracks.track);
-        }
-        if (!music.data.tracks && !trackList) { */
-          setTrackList(dataExample)/* ;
-        }
-      }) */
+    axios.get(musicoveryURL).then((music) => {
+      if (music.data.tracks) {
+        console.log(music.data.tracks.track);
+        setTrackList(music.data.tracks.track);
+      }
+      if (!music.data.tracks && !trackList) {
+        setTrackList(dataExample);
+      }
+    });
   }
 
   React.useEffect(() => {
@@ -148,7 +145,8 @@ function App() {
   return (
     <div className="App">
       <MainPanel
-      trackList={trackList}
+        trackList={trackList}
+        setTrackList={setTrackList}
         genreNo={genreNo}
         setGenreNo={setGenreNo}
         setTrackValence={setTrackValence}

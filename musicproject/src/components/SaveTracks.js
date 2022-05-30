@@ -1,20 +1,59 @@
-import { doc, updateDoc, setDoc } from "firebase/firestore";
-import { db } from "../firebase"
+import { doc, updateDoc, getDocs } from "firebase/firestore";
+import { usersCollection, db } from "../firebase";
 export function SaveTracks(props) {
-    const SaveTracks = async () => {
-      console.log('userID: ',props.userID)
-      const userDoc = doc(db, "users", props.name)
-      const newFields = {trackList: props.trackList,
-        trackValence: props.trackValence,
-        trackArousal: props.trackArousal,}
-      await setDoc(doc(userDoc),{newFields})
+  const SaveTracks = async (
+    id,
+    trackList,
+    trackValence,
+    trackArousal,
+    genreNo
+  ) => {
+    const userDoc = doc(db, "users", id);
+    const newFields = {
+      trackList: trackList,
+      trackValence: trackValence,
+      trackArousal: trackArousal,
+      genreNo: genreNo,
+    };
+    await updateDoc(userDoc, newFields);
+    props.setSuccessText("Saved Tracks on your Account");
+    props.setSuccessScreen(true);
+    await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(props.setSuccessScreen(false));
+      }, 4000);
+    });
+  };
+  const LoadTracks = async (id, setTrackList) => {
+    const userData = await getDocs(usersCollection);
+    props.setUserList(
+      userData.docs.map((doc) => ({ ...doc.data(), id: doc.id }))
+    );
+    for (let i = 0; i < props.userList.length; i++) {
+      if (id === props.userList[i].id) {
+        setTrackList(props.userList[i].trackList);
+        props.setSuccessText("Loaded your list of Tracks");
+        props.setSuccessScreen(true);
+        await new Promise((resolve) => {
+          setTimeout(() => {
+            resolve(props.setSuccessScreen(false));
+          }, 4000);
+        });
+      }
     }
-
-    if (!props.logged) {
-      return (<div id="saveLoad">
+  };
+  if (!props.logged) {
+    return (
+      <div id="saveLoad">
         <button
           onClick={() => {
-            SaveTracks()
+            SaveTracks(
+              props.userID,
+              props.trackList,
+              props.trackValence,
+              props.trackArousal,
+              props.genreNo
+            );
           }}
           id="saveButton"
           className="savebtn"
@@ -30,7 +69,7 @@ export function SaveTracks(props) {
         </button>
         <button
           onClick={() => {
-            SaveTracks()
+            LoadTracks(props.userID, props.setTrackList);
           }}
           id="Button"
           className="savebtn"
@@ -44,8 +83,7 @@ export function SaveTracks(props) {
           />
           <p>load</p>
         </button>
-        </div>
-      );
-    }
+      </div>
+    );
   }
-  
+}
