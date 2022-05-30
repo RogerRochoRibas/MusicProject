@@ -42,9 +42,10 @@
 }
 
 #genreGrid {
-  max-width: 300px;
   height: 375px;
-  padding:0px 30px;
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 button {
