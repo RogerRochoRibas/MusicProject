@@ -134,7 +134,7 @@ article div {
   border-radius: 10px;
 }
 
-#genreGrid .Cinema {
+#genreGrid .Latin {
   background: rgba(249, 66, 0, 1);
   background: linear-gradient(
     90deg,
@@ -143,7 +143,7 @@ article div {
   );
 }
 
-#genreGrid .Cinema > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Latin > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgba(249, 66, 0, 1);
   border: 2px solid rgba(249, 66, 0, 1);
@@ -214,12 +214,12 @@ article div {
   border-radius: 10px;
 }
 
-#genreGrid .European {
+#genreGrid .Cinema {
   background: rgb(111, 0, 255);
   background: linear-gradient(90deg, rgb(43, 0, 103) 0%, rgb(98, 0, 255) 100%);
 }
 
-#genreGrid .European > .genreBox > input[type="checkbox"]:checked ~ div {
+#genreGrid .Cinema > .genreBox > input[type="checkbox"]:checked ~ div {
   background-color: #ffffff;
   color: rgb(76, 0, 255);
   border: 2px solid rgb(76, 0, 255);

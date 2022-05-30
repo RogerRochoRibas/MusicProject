@@ -21,7 +21,7 @@ export function GenreSelector(props) {
       <GenreButton
         genreNo={props.genreNo}
         setGenreNo={props.setGenreNo}
-        genre="Cinema"
+        genre="Latin"
       />
       <GenreButton
         genreNo={props.genreNo}
@@ -46,7 +46,7 @@ export function GenreSelector(props) {
       <GenreButton
         genreNo={props.genreNo}
         setGenreNo={props.setGenreNo}
-        genre="European"
+        genre="Cinema"
       />
       <GenreButton
         genreNo={props.genreNo}

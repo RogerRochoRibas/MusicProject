@@ -1,14 +1,14 @@
 import React from "react";
 import { getDocs, addDoc } from "firebase/firestore";
-import { usersCollection } from "../firebase";
+import { usersCollection, db } from "../firebase";
 
-export function Modal(props) {
+export function LoginModal(props) {
   const [name, setName] = React.useState("");
   const [pass, setPass] = React.useState("");
   const [userList, setUserList] = React.useState([]);
 
   const createUser = async () => {
-    await addDoc(usersCollection, { name: name, pass: pass });
+    await setDoc(dic(db,"users",{name}), { name: name, pass: pass , trackList: props.trackList});
     props.setLoginScreen("false");
     props.setSuccessScreen(true);
     await new Promise((resolve) => {
@@ -18,13 +18,10 @@ export function Modal(props) {
     });
   };
   const validateUser = async () => {
-    console.log("Login in motion");
     const userData = await getDocs(usersCollection);
     setUserList(userData.docs.map((doc) => ({ ...doc.data() })));
     for (let i = 0; i < userList.length; i++) {
-      console.log("checking: ", userList[i]);
       if (name === userList[i].name && pass === userList[i].pass) {
-        console.log("Log In Success");
         props.setLogged(true);
         props.setLoginScreen(false);
         props.setSuccessScreen(true);

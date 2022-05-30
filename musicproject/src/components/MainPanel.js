@@ -2,7 +2,7 @@ import { Slider } from "./Slider";
 import { ChangeSongs } from "./ChangeSongs";
 import { GenreSelector, AllGenres } from "./GenreSelector";
 import { LoginButton } from "./LoginButton";
-import { Modal } from "./Modal";
+import { LoginModal } from "./LoginModal";
 import React from "react";
 import { SuccessScreen } from "./SuccessScreen";
 import { SaveTracks } from "./SaveTracks";
@@ -10,6 +10,7 @@ import { SaveTracks } from "./SaveTracks";
 export function MainPanel(props) {
   const [loginScreen, setLoginScreen] = React.useState("");
   const [successScreen, setSuccessScreen] = React.useState("");
+  const [userID, setUserID] = React.useState("");
   return (
     <>
       <div id="MainPanel">
@@ -28,7 +29,11 @@ export function MainPanel(props) {
         <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
         <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
         <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
-        <SaveTracks/>
+        <SaveTracks
+          userID={userID}
+          trackValence={props.trackValence}
+          trackArousal={props.trackArousal}
+        />
         <LoginButton
           setLoginScreen={setLoginScreen}
           loginScreen={loginScreen}
@@ -36,13 +41,15 @@ export function MainPanel(props) {
           setLogged={props.setLogged}
         />
       </div>
-      <Modal
+      <LoginModal
+        trackList={props.trackList}
         successScreen={successScreen}
         setSuccessScreen={setSuccessScreen}
         setLogged={props.setLogged}
         logged={props.logged}
         setLoginScreen={setLoginScreen}
         loginScreen={loginScreen}
+        setUserID={setUserID}
       />
       <SuccessScreen logged={props.logged} successScreen={successScreen} />
     </>

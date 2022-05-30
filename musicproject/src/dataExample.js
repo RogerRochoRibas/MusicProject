@@ -2,7 +2,7 @@ export const dataExample = [
   {
     id: "38835",
     title: "Norbert's Working",
-    artist_display_name: "Freddy Fresh",
+    artist_display_name: "Freddy Freshh",
     artists: {
       artist: {
         mbid: "bb9f09b9-ad8e-485f-a892-d4589309ca77",

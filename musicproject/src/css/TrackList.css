@@ -18,12 +18,12 @@
 
 .Tracks li {
   display: inline-block;
-  width: 180px;
+  width: 200px;
   position: relative;
   vertical-align: top;
   margin: 15px;
   font-family: "helvetica", san-serif;
-  min-height: 180px;
+  min-height: 200px;
   background: #fffefe;
   border: 1px solid #252727;
   text-align: left;
@@ -160,9 +160,7 @@
   border: 2px solid rgba(249, 0, 135, 1);
 }
 
-.Tracks .cinema:before,
-.Tracks .cinéma:before,
-.Tracks .soundtrack:before {
+.Tracks .latin:before {
   background: -webkit-linear-gradient(
     to right,
     rgb(249, 120, 0),
@@ -170,15 +168,15 @@
   );
   background: linear-gradient(to right, rgb(249, 120, 0), rgb(251, 188, 0));
 }
-.Tracks .cinema:after,
-.Tracks .soundtrack:after,
-.Tracks .cinéma:after {
+.Tracks .latin:after {
   background: rgba(251, 167, 0, 0.2);
 }
-.Tracks .cinema,
-.Tracks .cinéma,
-.Tracks .soundtrack {
+.Tracks .latin {
   border: 2px solid rgb(249, 153, 0);
+}
+
+.soundtrack h2 {
+  font-size: 32px!important;
 }
 
 .Tracks .jazz:before,
@@ -299,29 +297,24 @@
   border: 2px solid rgb(255, 255, 44);
 }
 
-.Tracks .european:before,
-.Tracks .flamenco:before,
-.Tracks .chanson:before,
-.Tracks .gospel:before,
-.Tracks .latin:before {
+.Tracks .cinema:before,
+.Tracks .soundtrack:before,
+.Tracks .cinéma:before {
   background: rgb(111, 0, 255);
 }
-.Tracks .european:after,
-.Tracks .flamenco:after,
-.Tracks .chanson:after,
-.Tracks .gospel:after,
-.Tracks .latin:after {
+.Tracks .cinema:after,
+.Tracks .soundtrack:after,
+.Tracks .cinéma:after  {
   background: rgba(111, 0, 255, 0.2);
 }
-.Tracks .european,
-.Tracks .flamenco,
-.Tracks .chanson,
-.Tracks .gospel,
-.Tracks .latin {
+.Tracks .cinema,
+.Tracks .soundtrack,
+.Tracks .cinéma {
   border: 2px solid rgb(111, 0, 255);
 }
 
 .Tracks .world:before,
+.Tracks .european:before,
 .Tracks .african:before,
 .Tracks .afrobeat:before,
 .Tracks .americana:before,
@@ -340,6 +333,7 @@
   background: rgba(167, 251, 0);
 }
 .Tracks .world:after,
+.Tracks .european:after,
 .Tracks .african:after,
 .Tracks .afrobeat:after,
 .Tracks .americana:after,
@@ -358,6 +352,7 @@
   background: rgba(167, 251, 0, 0.2);
 }
 .Tracks .world,
+.Tracks .european,
 .Tracks .african,
 .Tracks .afrobeat,
 .Tracks .americana,
