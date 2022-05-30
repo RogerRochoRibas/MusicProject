@@ -107,7 +107,7 @@ function App() {
     }
     if (genreNo.Rock) {
       Rock =
-        "blues rock,darkwave,emo,French rock,fusion rock,glam,gothic,grunge,guitar hero,hard-rock,indie rock,kraut rock,new-wave,psychedelic,punk,rock,rock'n'roll,rockabilly,showgaxe,";
+        "rock,blues rock,darkwave,emo,French rock,fusion rock,glam,gothic,grunge,guitar hero,hard-rock,indie rock,kraut rock,new-wave,psychedelic,punk,rock,rock'n'roll,rockabilly,showgaxe,";
     }
     if (genreNo.Folk) {
       Folk = "brazilian folk,folk,folklore,celtic,gypsy,tango,";
