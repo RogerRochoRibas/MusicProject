@@ -42,10 +42,11 @@
 }
 
 #genreGrid {
+  max-width: 300px;
   height: 375px;
-  text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 button {
@@ -54,7 +55,8 @@ button {
 }
 
 article {
-  width: 110px;
+  position: relative;
+  width: 120px;
   height: 30px;
   margin: 5px;
   float: left;
