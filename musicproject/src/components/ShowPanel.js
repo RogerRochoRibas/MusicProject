@@ -9,7 +9,12 @@ export function ShowPanel(props) {
       className="showPanel"
       href="/"
     >
-      <p>Hide</p>
+    <img
+      id="close-icon"
+      className="panelpng"
+      alt="close icon"
+      src={require("../img/icon-open.png")}
+    />
     </button>
   );
 }

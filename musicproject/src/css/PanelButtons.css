@@ -19,8 +19,8 @@
   background-color: black;
   right: 0px;
   top: 50%;
-  height: 100px;
-  width: 30px;
+  height: 70px;
+  width: 70px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   transform: translate(0%, -50%);
@@ -29,6 +29,12 @@
 .panelpng {
   height: 50px;
   width: auto;
+}
+
+@media (max-width: 400px) {
+.panelpng {
+  height: 30px;
+}
 }
 
 .logbtn p,

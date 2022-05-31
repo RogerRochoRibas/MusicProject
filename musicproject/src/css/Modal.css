@@ -158,3 +158,32 @@ input[type="password"] {
     display:none;
   }
 }
+
+@media (max-width: 400px) {
+  
+@keyframes move-around {
+  0% {
+    transform: rotate(2turn);
+    display:initial;
+  }
+  20% {
+    transform: rotate(4turn);
+    display:initial;
+  }
+  50% {
+    opacity: 100%;
+    transform: rotate(4turn);
+    display:initial;
+  }
+  70% {
+    opacity: 50%;
+    transform: rotate(6turn);
+    opacity: 0%;
+    display:initial;
+  }
+  100% {
+    opacity: 0%;
+    display:none;
+  }
+}
+}
