@@ -2,19 +2,22 @@ import "./css/Slider.css";
 import "./css/Button.css";
 import "./css/TrackList.css";
 import "./css/MainPanel.css";
-import "./css/Logbtn.css";
+import "./css/PanelButtons.css";
 import "./css/Modal.css";
 import React from "react";
 import { TrackList } from "./components/TrackList";
 import { MainPanel } from "./components/MainPanel";
 import { dataExample } from "./dataExample";
+import { ShowPanel } from "./components/ShowPanel";
 import axios from "axios";
+import classNames from "classnames";
 
 function App() {
   const [logged, setLogged] = React.useState(false);
   const [trackList, setTrackList] = React.useState([]);
   const [trackValence, setTrackValence] = React.useState(500000);
   const [trackArousal, setTrackArousal] = React.useState(500000);
+  const [panelHidden, setPanelHidden] = React.useState(false);
   const [genreNo, setGenreNo] = React.useState({
     Rap: false,
     Electro: false,
@@ -127,15 +130,15 @@ function App() {
     }
     let musicoveryURL = `https://musicovery.com/api/V6/playlist.php?&fct=getfrommood&popularitymax=100&popularitymin=50&starttrackid=&trackvalence=${trackValence}&trackarousal=${trackArousal}&resultsnumber=15&genreNo=${Rap}${Electro}${HipHop}${Soul}${Metal}${World}${Latin}${Cinema}${Funk}${Classical}${Reggae}${Rock}${Vocal}${Pop}${Country}${Folk}${Jazz}${Blues}`;
 
-    axios.get(musicoveryURL).then((music) => {
+    /* axios.get(musicoveryURL).then((music) => {
       if (music.data.tracks) {
         console.log(music.data.tracks.track);
         setTrackList(music.data.tracks.track);
       }
-      if (!music.data.tracks && !trackList) {
-        setTrackList(dataExample);
-      }
-    });
+      if (!music.data.tracks && !trackList) { */
+    setTrackList(dataExample);
+    /* }
+    }); */
   }
 
   React.useEffect(() => {
@@ -145,6 +148,8 @@ function App() {
   return (
     <div className="App">
       <MainPanel
+        panelHidden={panelHidden}
+        setPanelHidden={setPanelHidden}
         trackList={trackList}
         setTrackList={setTrackList}
         genreNo={genreNo}
@@ -157,11 +162,12 @@ function App() {
         setLogged={setLogged}
         logged={logged}
       />
-      <div className="trackContainer">
+      <div className={classNames("trackContainer",{ expandToggle: panelHidden })}>
         <ul className="Tracks">
           <TrackList trackList={trackList} />
         </ul>
       </div>
+      <ShowPanel panelHidden={panelHidden} setPanelHidden={setPanelHidden} />
     </div>
   );
 }

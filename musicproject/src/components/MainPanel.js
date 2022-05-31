@@ -6,6 +6,8 @@ import { LoginModal } from "./LoginModal";
 import React from "react";
 import { SuccessScreen } from "./SuccessScreen";
 import { SaveTracks } from "./SaveTracks";
+import { HidePanel } from "./HidePanel";
+import classNames from "classnames";
 
 export function MainPanel(props) {
   const [loginScreen, setLoginScreen] = React.useState("");
@@ -15,7 +17,7 @@ export function MainPanel(props) {
   const [userList, setUserList] = React.useState([]);
   return (
     <>
-      <div id="MainPanel">
+      <div id="MainPanel" className={classNames("main-panel",{ hideToggle: props.panelHidden })}>
         <img id="logo" alt="page logo" src={require("../musical-notes.png")} />
         <h1>Musicaster</h1>
         <Slider
@@ -50,6 +52,7 @@ export function MainPanel(props) {
           logged={props.logged}
           setLogged={props.setLogged}
         />
+        <HidePanel panelHidden={props.panelHidden} setPanelHidden={props.setPanelHidden} />
       </div>
       <LoginModal
         userList={userList}

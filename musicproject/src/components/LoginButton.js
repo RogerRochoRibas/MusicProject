@@ -11,7 +11,7 @@ export function LoginButton(props) {
       >
         <img
           id="login-icon"
-          className="logicon"
+          className="panelpng"
           alt="login icon"
           src={require("../img/icon-login.png")}
         />
@@ -31,7 +31,7 @@ export function LoginButton(props) {
       >
         <img
           id="login-icon"
-          className="logicon"
+          className="panelpng"
           alt="login icon"
           src={require("../img/icon-logout.png")}
         />

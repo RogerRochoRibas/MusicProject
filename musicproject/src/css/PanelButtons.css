@@ -1,0 +1,56 @@
+.logbtn,
+#hidePanel {
+  position: absolute;
+  top: 20px;
+  background-color: transparent;
+}
+
+.logbtn {
+  right: 30px;
+}
+
+#hidePanel {
+  left: 30px;
+}
+
+#showPanel {
+  display: initial;
+  position: absolute;
+  background-color: black;
+  right: 0px;
+  top: 50%;
+  height: 100px;
+  width: 30px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transform: translate(0%, -50%);
+}
+
+.panelpng {
+  height: 50px;
+  width: auto;
+}
+
+.logbtn p,
+.savebtn p,
+.hidePanel p {
+  color: white;
+  margin: 0px;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.savebtn {
+  background-color: rgba(0, 0, 0, 0);
+  width: 80px;
+}
+
+#saveLoad {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.hideToggle {
+  display: none;
+}
