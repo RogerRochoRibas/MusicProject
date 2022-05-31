@@ -15,63 +15,89 @@ export function MainPanel(props) {
   const [successText, setSuccessText] = React.useState("Congratulations");
   const [userID, setUserID] = React.useState("");
   const [userList, setUserList] = React.useState([]);
+  const [logged, setLogged] = React.useState(false);
+  const [trackValence, setTrackValence] = React.useState(500000);
+  const [trackArousal, setTrackArousal] = React.useState(500000);
+  const [genreNo, setGenreNo] = React.useState({
+    Rap: false,
+    Electro: false,
+    HipHop: false,
+    Soul: false,
+    Jazz: false,
+    Classical: false,
+    Blues: false,
+    Cinema: false,
+    Latin: false,
+    World: false,
+    Metal: false,
+    Reggae: false,
+    Rock: false,
+    Folk: false,
+    Vocal: false,
+    Country: false,
+    Pop: false,
+    Funk: false,
+  });
   return (
     <>
-      <div id="MainPanel" className={classNames("main-panel",{ hideToggle: props.panelHidden })}>
+      <div
+        id="MainPanel"
+        className={classNames("main-panel", { hideToggle: props.panelHidden })}
+      >
         <img id="logo" alt="page logo" src={require("../musical-notes.png")} />
         <h1>Musicaster</h1>
         <Slider
-          setTrack={props.setTrackValence}
+          setTrack={setTrackValence}
           identifier="Happy"
           identifierTwo="Sad"
         ></Slider>
         <Slider
-          setTrack={props.setTrackArousal}
+          setTrack={setTrackArousal}
           identifier="Energetic"
           identifierTwo="Calm"
         ></Slider>
-        <AllGenres genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
-        <GenreSelector genreNo={props.genreNo} setGenreNo={props.setGenreNo} />
-        <ChangeSongs fetchMain={() => props.fetchMain()}></ChangeSongs>
+        <AllGenres genreNo={genreNo} setGenreNo={setGenreNo} />
+        <GenreSelector genreNo={genreNo} setGenreNo={setGenreNo} />
+        <ChangeSongs
+          genreNo={genreNo}
+          trackValence={trackValence}
+          trackArousal={trackArousal}
+          setTrackList={props.setTrackList}
+        />
         <SaveTracks
           userList={userList}
           setUserList={setUserList}
           userID={userID}
-          genreNo={props.genreNo}
-          trackValence={props.trackValence}
-          trackArousal={props.trackArousal}
           trackList={props.trackList}
           setTrackList={props.setTrackList}
           setSuccessScreen={setSuccessScreen}
           setSuccessText={setSuccessText}
-          logged={props.logged}
+          logged={logged}
         />
         <LoginButton
           setLoginScreen={setLoginScreen}
-          loginScreen={loginScreen}
-          logged={props.logged}
-          setLogged={props.setLogged}
+          logged={logged}
+          setLogged={setLogged}
         />
-        <HidePanel panelHidden={props.panelHidden} setPanelHidden={props.setPanelHidden} />
+        <HidePanel
+          setPanelHidden={props.setPanelHidden}
+        />
       </div>
       <LoginModal
         userList={userList}
         setUserList={setUserList}
         setSuccessText={setSuccessText}
-        genreNo={props.genreNo}
-        trackValence={props.trackValence}
-        trackArousal={props.trackArousal}
         trackList={props.trackList}
         successScreen={successScreen}
         setSuccessScreen={setSuccessScreen}
-        setLogged={props.setLogged}
-        logged={props.logged}
+        setLogged={setLogged}
+        logged={logged}
         setLoginScreen={setLoginScreen}
         loginScreen={loginScreen}
         setUserID={setUserID}
       />
       <SuccessScreen
-        logged={props.logged}
+        logged={logged}
         successScreen={successScreen}
         successText={successText}
       />

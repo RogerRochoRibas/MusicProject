@@ -11,9 +11,6 @@ export function LoginModal(props) {
       name: name,
       pass: pass,
       trackList: props.trackList,
-      trackValence: props.trackValence,
-      trackArousal: props.trackArousal,
-      genreNo: props.genreNo,
     });
     props.setLoginScreen("false");
     props.setSuccessText('Register Successful')
