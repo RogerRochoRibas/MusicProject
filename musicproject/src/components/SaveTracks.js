@@ -61,7 +61,7 @@ export function SaveTracks(props) {
         >
           <img
             id="login-icon"
-            className="logicon"
+            className="panelpng"
             alt="login icon"
             src={require("../img/icon-save.png")}
           />
@@ -77,7 +77,7 @@ export function SaveTracks(props) {
         >
           <img
             id="login-icon"
-            className="logicon"
+            className="panelpng"
             alt="login icon"
             src={require("../img/icon-load.png")}
           />
