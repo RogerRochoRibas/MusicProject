@@ -3,17 +3,11 @@ import { usersCollection, db } from "../firebase";
 export function SaveTracks(props) {
   const SaveTracks = async (
     id,
-    trackList,
-    trackValence,
-    trackArousal,
-    genreNo
+    trackList
   ) => {
     const userDoc = doc(db, "users", id);
     const newFields = {
-      trackList: trackList,
-      trackValence: trackValence,
-      trackArousal: trackArousal,
-      genreNo: genreNo,
+      trackList: trackList
     };
     await updateDoc(userDoc, newFields);
     props.setSuccessText("Saved Tracks on your Account");
@@ -49,10 +43,7 @@ export function SaveTracks(props) {
           onClick={() => {
             SaveTracks(
               props.userID,
-              props.trackList,
-              props.trackValence,
-              props.trackArousal,
-              props.genreNo
+              props.trackList
             );
           }}
           id="saveButton"
@@ -61,7 +52,7 @@ export function SaveTracks(props) {
         >
           <img
             id="login-icon"
-            className="logicon"
+            className="panelpng"
             alt="login icon"
             src={require("../img/icon-save.png")}
           />
@@ -77,7 +68,7 @@ export function SaveTracks(props) {
         >
           <img
             id="login-icon"
-            className="logicon"
+            className="panelpng"
             alt="login icon"
             src={require("../img/icon-load.png")}
           />

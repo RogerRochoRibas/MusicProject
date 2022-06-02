@@ -4,6 +4,10 @@
   z-index:1
 }
 
+.expandToggle {
+  width:100%;
+}
+
 .Tracks {
   padding: 0;
   list-style: none;

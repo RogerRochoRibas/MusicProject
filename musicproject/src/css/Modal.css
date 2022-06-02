@@ -102,11 +102,6 @@
   margin: 10px;
 }
 
-input[type="text"],
-input[type="password"] {
-  font-weight: bold;
-}
-
 input[type="text"]:focus,
 input[type="password"]:focus {
   color: #000000;
@@ -116,10 +111,12 @@ input[type="text"],
 input[type="password"] {
   border-radius: 5px;
   height: 30px;
+  max-width: 100%;
   line-height: 40px;
   padding: 0 5px;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .login,
@@ -160,4 +157,33 @@ input[type="password"] {
     opacity: 0%;
     display:none;
   }
+}
+
+@media (max-width: 400px) {
+  
+@keyframes move-around {
+  0% {
+    transform: rotate(2turn);
+    display:initial;
+  }
+  20% {
+    transform: rotate(4turn);
+    display:initial;
+  }
+  50% {
+    opacity: 100%;
+    transform: rotate(4turn);
+    display:initial;
+  }
+  70% {
+    opacity: 50%;
+    transform: rotate(6turn);
+    opacity: 0%;
+    display:initial;
+  }
+  100% {
+    opacity: 0%;
+    display:none;
+  }
+}
 }
