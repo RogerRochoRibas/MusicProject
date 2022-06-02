@@ -40,7 +40,7 @@
     <a href="https://github.com/RogerRochoRibas/MusicProject"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/RogerRochoRibas/MusicProject">View Demo</a>
+    <a href="https://rogerrochoribas.github.io/MusicProject/">View Demo</a>
     ·
     <a href="https://github.com/RogerRochoRibas/MusicProject/issues">Report Bug</a>
     ·
@@ -80,7 +80,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Musicaster Screen Shot][musicaster-screenshot]](https://github.com/RogerRochoRibas/MusicProject/src/img/screenshot.png)
+[![Musicaster Screen Shot][musicaster-screenshot]](https://github.com/RogerRochoRibas/MusicProject/blob/main/musicproject/src/img/screenshot.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
