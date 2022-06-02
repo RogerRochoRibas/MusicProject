@@ -131,10 +131,9 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+- [ ] Creating a User Profile page that lets the user see their Tracklist, change their User Name and Password and Delete their Account.
+- [ ] Adding new ways to get tracklists through Musicovery.com
+- [ ] Improving the Registration and Log In Process.
 
 See the [open issues](https://github.com/RogerRochoRibas/MusicProject/issues) for a full list of proposed features (and known issues).
 
