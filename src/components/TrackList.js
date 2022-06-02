@@ -1,4 +1,16 @@
 import React from "react";
+import classNames from "classnames";
+
+export function TrackContainer(props) {
+  return (<div
+  className={classNames("trackContainer", { expandToggle: props.panelHidden })}
+>
+  <ul className="Tracks">
+    <TrackList trackList={props.trackList} />
+  </ul>
+</div>)
+}
+
 export function TrackList(props) {
   if (props.trackList) {
     if (props.trackList.length > 0) {

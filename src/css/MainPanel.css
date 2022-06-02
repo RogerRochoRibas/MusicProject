@@ -9,6 +9,7 @@
   top: 0px;
   right: 0px;
   z-index: 2;
+  text-align: center;
 }
 
 @media (max-height: 950px) {
