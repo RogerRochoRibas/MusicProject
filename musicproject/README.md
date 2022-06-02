@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/musicproject/src/img/screenshot.png" alt="Logo" width="1920" height="1083">
+<img src="/musicproject/src/img/screenshot.png" alt="Screenshot">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
