@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/RogerRochoRibas/MusicProject">
-    <img src="/musicproject/src/musical-notes.png" alt="Logo" width="80" height="80">
+    <img src="/src/musical-notes.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Musicaster</h3>
@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/musicproject/src/img/screenshot.png" alt="Screenshot">
+<img src="/src/img/screenshot.png" alt="Screenshot">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
