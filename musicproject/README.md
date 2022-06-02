@@ -174,9 +174,8 @@ Project Link: [https://github.com/RogerRochoRibas/MusicProject](https://github.c
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Luis Vicente](https://github.com/vicenlu)
+* [Musicovery API](https://musicovery.com/api/V6/doc/documentation.php#introduction)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
