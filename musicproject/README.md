@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Musicaster Screen Shot][musicaster-screenshot]](/RogerRochoRibas/MusicProject/blob/main/musicproject/src/img/screenshot.png)
+<img src="/musicproject/src/img/screenshot.png" alt="Logo" width="1920" height="1083">
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
