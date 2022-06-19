@@ -103,9 +103,13 @@ This is an example of how to list things you need to use the software and how to
    npm start
    ```
 <span color="red">WARNING</span>: The Musicovery API is giving CORS problems, to try the app you can start Google Chrome using
+   Windows RUN:
    ```sh
-   Windows RUN: chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
-   OSX Terminal: $ open -a Google\ Chrome --args --disable-web-security --user-data-dir
+    chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+   ```
+   OSX Terminal: 
+   ```sh
+    $ open -a Google\ Chrome --args --disable-web-security --user-data-dir
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
