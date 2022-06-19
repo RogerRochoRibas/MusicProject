@@ -15,7 +15,7 @@ export function LoginButton(props) {
           alt="login icon"
           src={require("../img/icon-login.png")}
         />
-        <p>Login</p>
+        <p>Account</p>
       </button>
     );
   }
