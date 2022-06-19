@@ -96,12 +96,13 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install axios
    npm install classnames
+   npm install react-router-dom
    ```
 3. Start the project
    ```sh
    npm start
    ```
-4. To avoid CORS issues when running locally, start Google Chrome using
+<span color="red">WARNING</span>: The Musicovery API is giving CORS problems, to try the app you can start Google Chrome using
    ```sh
    Windows RUN: chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
    OSX Terminal: $ open -a Google\ Chrome --args --disable-web-security --user-data-dir
