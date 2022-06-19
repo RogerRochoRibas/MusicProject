@@ -56,7 +56,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="/src/img/screenshot.png" alt="Screenshot">
+Using the Filter and the Sliders
+![Demo](https://user-images.githubusercontent.com/98771907/174484065-2673c6cb-5e42-4c30-8558-1c55f296b329.gif)
+
+Modifying the Sliders
+![Demo](https://user-images.githubusercontent.com/98771907/174484068-40accb3d-628d-4ce7-ba55-8d570466f894.gif)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,7 +106,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm start
    ```
-<span color="red">WARNING</span>: The Musicovery API is giving CORS problems, to try the app you can start Google Chrome using<br/>
+WARNING: The Musicovery API is giving CORS problems, to try the app you can start Google Chrome using<br/>
    Windows RUN:
    ```sh
     chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
