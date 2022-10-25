@@ -117,10 +117,10 @@ This is an example of how to list things you need to use the software and how to
    <!-- USAGE -->
 ### Usage
 
-Either installing it or going to https://rogerrochoribas.github.io/MusicProject/ you wil likely face this issue
+Either installing it or going to https://rogerrochoribas.github.io/MusicProject/ you will likely face this issue
 
-WARNING: The Musicovery API is giving CORS problems, to use the full functionality of the app you can use Google Chrome<br/>
-Create a direct link to your Google Chrome, right click on it and open properties, and at the end of the target add:
+The Musicovery API is giving CORS problems, to use the full functionality of the app you can use Google Chrome.<br/>
+Create a direct link to your Google Chrome, right click on it and open properties, and at the end of the target field add:
    Windows RUN:
    ```sh
      --disable-web-security --user-data-dir="C:/ChromeDevSession"
