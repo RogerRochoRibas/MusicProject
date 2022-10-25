@@ -18,7 +18,7 @@ function App() {
     <Router className="App">
       <Routes>
         <Route
-          path="/"
+          path="/MusicProject"
           element={
             <>
               <MainPanel
