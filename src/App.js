@@ -23,7 +23,7 @@ function App() {
         <Route
           path="/musicproject/"
           element={
-            <><ErrorMessage/>
+            <>{errorMessage? <ErrorMessage/> : <></>}
               <MainPanel
                 panelHidden={panelHidden}
                 setPanelHidden={setPanelHidden}
