@@ -1,5 +1,15 @@
 .errorMessage {
     width: 500px;
+    max-width: 90%;
     min-height: 170px;
     padding: 10px;
+    background-color: rgb(255, 255, 255);
+    color: white;
+    margin: 0px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.errorMessage a {
+    font-size: 0.95em;
 }
