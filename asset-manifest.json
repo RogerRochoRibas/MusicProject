@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MusicProject/static/css/main.fe9faa75.css",
-    "main.js": "/MusicProject/static/js/main.03820c75.js",
+    "main.css": "/MusicProject/static/css/main.1413fe52.css",
+    "main.js": "/MusicProject/static/js/main.c0e01f49.js",
     "static/media/bg3.png": "/MusicProject/static/media/bg3.6f4005c3b22c008df7cf.png",
     "static/media/musical-notes.png": "/MusicProject/static/media/musical-notes.17b3b37de6406469dbd6.png",
     "index.html": "/MusicProject/index.html",
-    "main.fe9faa75.css.map": "/MusicProject/static/css/main.fe9faa75.css.map",
-    "main.03820c75.js.map": "/MusicProject/static/js/main.03820c75.js.map"
+    "main.1413fe52.css.map": "/MusicProject/static/css/main.1413fe52.css.map",
+    "main.c0e01f49.js.map": "/MusicProject/static/js/main.c0e01f49.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe9faa75.css",
-    "static/js/main.03820c75.js"
+    "static/css/main.1413fe52.css",
+    "static/js/main.c0e01f49.js"
   ]
 }
