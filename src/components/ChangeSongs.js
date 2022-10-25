@@ -92,14 +92,16 @@ export function ChangeSongs(props) {
 
     axios.get(musicoveryURL).then((music) => {
       if (music.data.tracks) {
-        console.log('Data from API: ',music.data.tracks.track);
         props.setTrackList(music.data.tracks.track);
+        props.setErrorMessage(false)
       }
-      if (!music.data.tracks && !props.trackList) {
-        props.setTrackList(dataExample);
-      }
+    }).catch(function (error) {
+      /* console.log("Fetch Error: ",error) */
+      props.setTrackList(dataExample);
+      props.setErrorMessage(true)
     });
   }
+  
 
   return (
     <button

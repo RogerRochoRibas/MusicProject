@@ -1,14 +1,15 @@
 .trackContainer {
   width: calc(100% - 400px);
   padding-top: 50px;
-  z-index:1
+  z-index: 1;
 }
 
 .expandToggle {
-  width:100%;
+  width: 100%;
 }
 
-.Tracks {
+.Tracks,
+.errorMessage {
   padding: 0;
   list-style: none;
   text-align: center;
@@ -21,7 +22,8 @@
   padding: 15px;
 }
 
-.Tracks li {
+.Tracks li,
+.errorMessage {
   display: inline-block;
   width: 200px;
   position: relative;
@@ -49,7 +51,7 @@
   margin-bottom: 5px;
   font-weight: bold;
 }
-.track_artist {
+.track_artist, .errorMessage > p {
   font-size: 18px;
   line-height: 18px;
   color: #202020;
@@ -61,7 +63,8 @@
   opacity: 0.6;
 }
 
-.Tracks li:before {
+.Tracks li:before,
+.errorMessage:before {
   content: "";
   position: absolute;
   top: -2px;
@@ -72,7 +75,8 @@
   background: #fff;
   transform: skew(2deg, 2deg);
 }
-.Tracks li:after {
+.Tracks li:after,
+.errorMessage:after {
   content: "";
   position: absolute;
   width: 40%;
@@ -181,7 +185,7 @@
 }
 
 .soundtrack h2 {
-  font-size: 32px!important;
+  font-size: 32px !important;
 }
 
 .Tracks .jazz:before,
@@ -309,7 +313,7 @@
 }
 .Tracks .cinema:after,
 .Tracks .soundtrack:after,
-.Tracks .cinéma:after  {
+.Tracks .cinéma:after {
   background: rgba(111, 0, 255, 0.2);
 }
 .Tracks .cinema,
@@ -380,14 +384,16 @@
 .Tracks .death:before,
 .Tracks .screamo:before,
 .Tracks .sludge:before,
-.Tracks .thrash:before {
+.Tracks .thrash:before,
+.errorMessage:before {
   background: rgba(0, 0, 168, 1);
 }
 .Tracks .metal:after,
 .Tracks .death:after,
 .Tracks .screamo:after,
 .Tracks .sludge:after,
-.Tracks .thrash:after {
+.Tracks .thrash:after,
+.errorMessage:after {
   background: rgba(0, 0, 168, 0.2);
 }
 .Tracks .metal,

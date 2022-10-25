@@ -63,6 +63,7 @@ export function MainPanel(props) {
           trackValence={trackValence}
           trackArousal={trackArousal}
           setTrackList={props.setTrackList}
+          setErrorMessage={props.setErrorMessage}
         />
         <SaveTracks
           userList={userList}

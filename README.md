@@ -96,6 +96,7 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 -->
+
 ### Installation
 
 1. Clone the repo
@@ -112,15 +113,23 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm start
    ```
-WARNING: The Musicovery API is giving CORS problems, to try the app you can start Google Chrome using<br/>
+
+   <!-- USAGE -->
+### Usage
+
+Either installing it or going to https://rogerrochoribas.github.io/MusicProject/ you wil likely face this issue
+
+WARNING: The Musicovery API is giving CORS problems, to use the full functionality of the app you can use Google Chrome<br/>
+Create a direct link to your Google Chrome, right click on it and open properties, and at the end of the target add:
    Windows RUN:
    ```sh
-    chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
+     --disable-web-security --user-data-dir="C:/ChromeDevSession"
    ```
-   OSX Terminal: 
+   The end Result will be something like this:
    ```sh
-    $ open -a Google\ Chrome --args --disable-web-security --user-data-dir
+    "C:\Program Files\Google\Chrome\Application\chrome.exe" --disable-web-security --user-data-dir="C:/ChromeDevSession"
    ```
+Using this shortcut will open Google Chrome and allow you to use this App without problems, both with a local install and online.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
